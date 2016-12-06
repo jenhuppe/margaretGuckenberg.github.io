@@ -1,0 +1,223 @@
+﻿/*move the ribbon back in line with the html flow*/
+body #s4-ribbonrow{
+	/*position:static;*/
+}
+
+div#bodyDiv {
+    padding: 0 0 50px;
+}
+
+/*remove the padding from the top of the wrapper div on publishing pages*/
+div#wrapperDiv{
+	/*padding-top:0px;*/
+}
+
+/*hide the left navigation on the public published pages*/
+div#leftNav{
+	display:none;
+}
+
+/*web part titles, group header titles in web parts, description title of lists*/
+/*.ms-bg was removed from this*/
+div.article-title{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    line-height:24px;
+    font-weight: normal !important;
+    padding: 15px 10px 0;
+    text-decoration: none;
+}
+
+/*don't display the breadcrumbs on publishing pages*/
+div#breadcrumbs{
+	display:none;
+}
+
+/*text that is entered in the page content section of new pages (not in a web part)*/
+div.welcome-content{
+	padding-top:10px;
+}
+
+/*content div style that takes up the entire page*/
+div.wholeContent {
+    float: left;
+    width: 960px;
+    padding:0px 10px;
+}
+
+/*content div style that takes up the entire page when the page has the left navigation shown*/
+div.wholeContentWithLeftnav {
+    float: left;
+    width: 100%;
+}
+
+
+/*content div style that takes up the left 1/3 of the page*/
+div.leftContent {
+    float: left;
+    margin-right: 20px;
+    width: 280px;
+    padding-left:10px;
+}
+
+/*content div style that takes up the left 2/3 of the page*/
+div.leftContentTwo {
+    float: left;
+    margin-right: 20px;
+    width: 640px;
+    padding-left:10px;
+}
+
+	div.leftContentTwo div.article-title{
+		padding-left:0px;
+	}
+
+/*content div style that takes up the left 590px of the page*/
+div.leftContentTwoSmall {
+    float: left;
+    margin-right: 20px;
+    width: 590px;
+}
+
+
+/*content div style that takes up the left 1/2 of the page*/
+div.leftHalf {
+    float: left;
+    margin-right: 10px;
+    width: 470px;
+}
+
+/*content div style that takes up the right 1/2 of the page*/
+div.rightHalf {
+    float: left;
+    margin-left: 10px;
+    width: 470px;
+}
+
+/*content div style that takes up the center 1/3 of the page*/
+div.centerContent {
+    float: left;
+    margin-right: 20px;
+    width: 340px;
+}
+
+/*content div style that takes up the right 1/3 of the page*/
+div.rightContent {
+    float: left;
+    width: 300px;
+    padding-right:10px;
+}
+
+/*content div style that takes up 350px of the right side*/
+div.rightContentLarge {
+    float: left;
+    width: 350px;
+}
+
+
+/*the td that contains the questions of FAQs*/
+h3.faqQuestion {
+    padding-top: 15px;
+    display:block;
+}
+
+/*the link and text of FAQ questions*/
+h3.faqQuestion a {
+    cursor: pointer;
+    display:block;
+    font-weight: bold;
+}
+
+/*image that diplays the "new!" on new questions*/
+h3.faqQuestion img {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/*div that surrounds answers in FAQs*/
+div.answer{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    display: none;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+/*===============CALENDAR STYLES===============*/
+
+/*surrounding div for the calendar table. OOTB has 4px margin. reduced to 1px*/
+.ms-acal-rootdiv{
+	margin-left:1px;
+}
+
+/*day header for the calendar month view*/
+.ms-acal-month-top{
+	padding:0px;
+	font-size:12px;
+}
+
+/*day number for the days in month view*/
+tr.ms-acal-summary-dayrow td{
+	font-size:11px;
+	background-color: #F5F6F7;
+	border-right:1px solid #D9DDE1;
+}
+	
+	/*div that MS puts inside the day number cell*/
+	.ms-acal-summary-dayrow td div{
+		margin:0px;
+		padding:0px;
+		padding-left:5px;
+	}
+	
+	/*div that contains the day data*/
+	.ms-acal-summary-itemrow td div{
+		margin:0;
+	}
+
+.ms-acal-summary-itemrow td{
+	border-right: 1px solid #D9DDE1;
+	border-top: 1px solid #D9DDE1;
+}
+
+/*day header for the calendar in day view*/
+.ms-acal-day-top{
+	font-size:12px;
+}
+
+/*time header for the calendar in day view*/
+th.ms-acal-detailtime, th.ms-acal-detailtime a{
+	font-size:12px!important;
+}
+
+.ms-acal-sdiv, .ms-acal-mdiv, .ms-acal-ddiv{
+	color:#3B4F65;
+}
+
+/*events in calendars*/
+.ms-acal-item, .ms-acal-default-hover, .ms-acal-selected, .ms-acal-default-hover{
+	font-size:9px;
+	background:#FFC309;
+	border:0px;
+	border-bottom:solid 1px #ebebeb;
+}
+
+	.ms-acal-item a, .ms-acal-default-hover a, .ms-acal-selected a, .ms-acal-default-hover a{
+		font-size:9px!important;
+	}
+	
+	.ms-acal-sdiv a, .ms-acal-mdiv a, .ms-acal-ddiv a{
+		color:#024272;
+	}
+	
+	.ms-acal-selected, .ms-acal-selected div{
+		color:#ae2030!important;
+	}
+
+/*===============END CALENDAR STYLES===============*/
+

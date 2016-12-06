@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0047)http://www.secnav.navy.mil/Pages/ContactUs.aspx -->
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./jquery-1.7.min.js(1).download"></script>
+	<script type="text/javascript" src="./jquery.maskedinput-1.3.min.js.download"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="./publicCustom.css">
+	
+	<style type="text/css">
+		body{
+			background:none;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			var phone;
+			var email;
+			var comments;
+			
+			$.mask.definitions['~']='[+-]';
+			$('input#phoneInput').mask("999-999-9999");
+			
+			function checkFields()
+			{
+				if( $('input#nameInput').val() == "")
+						{
+							$('input#nameInput').addClass('fieldIncorrect');
+							$('div.alertPopup p').html('The name field requires a value.');
+							$('div.alertPopup').show();
+							return 0;
+						}
+						
+						if( $('input#nameInput').val() != "")
+							{
+								if( $('input#nameInput').hasClass('fieldIncorrect'))
+									$('input#nameInput').removeClass('fieldIncorrect');
+									name = true;
+							}
+							
+				if ( ($('input#emailInput').val().indexOf('@')<0) || ($('input#emailInput').val().indexOf('.')<0))
+					{
+						$('input#emailInput').addClass('fieldIncorrect');
+						$('div.alertPopup p').html('The email field requires a valid email address.');
+						$('div.alertPopup').show();
+						return 0;
+					}
+					
+					if ( ($('input#emailInput').val().indexOf('@')>=0) || ($('input#emailInput').val().indexOf('.')>=0))
+
+						{
+							if( $('input#emailInput').hasClass('fieldIncorrect'))
+								$('input#emailInput').removeClass('fieldIncorrect');
+								email = true;
+						}
+					
+					
+					
+					if( $('textarea#commentInput').val() == "")
+					{
+						$('textarea#commentInput').addClass('fieldIncorrect');
+						$('div.alertPopup p').html('The comments field requires a value.');
+						$('div.alertPopup').show();
+						return 0;
+					}
+					
+					if( $('textarea#commentInput').val() != "")
+						{
+							if( $('textarea#commentInput').hasClass('fieldIncorrect'))
+								$('textarea#commentInput').removeClass('fieldIncorrect');
+								comments = true;
+						}
+
+						
+					
+					
+			}
+			
+			$('div.alertPopup a').click(function(){
+						$('div.alertPopup').hide();
+						
+					});
+					
+						
+			$('button#submitContact').click(function(e){
+				e.preventDefault();
+				checkFields();
+			});
+			
+		});
+		
+		
+		
+	</script>
+	
+	
+<!--[if gte mso 9]><![endif]-->
+<title>
+	Contact Webmaster
+</title></head>
+
+<body>
+		<div class="contactOuterContent">
+			<div class="contactInnerContent">
+				<form name="contactForm" method="post" action="http://www.secnav.navy.mil/Pages/ContactUs.aspx" id="contactForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMGRkXEGTEFQshyzgn0hxEeYv1EoF3xQ=">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4786EA7F">
+</div>
+					<h1>Contact the Webmaster</h1>
+
+					<p>Fill out the form below.</p>
+					<div class="alertPopup"><h2>Error</h2><p></p><a id="closeAlert">Close</a></div>
+
+					<div class="contactFields">
+						<label class="contactLabel" for="nameInput">Name:</label><span class="requiredFieldStar">*</span>
+						<input class="contactInput requiredField" type="text" maxlength="255" title="nameInput" name="nameInput" id="nameInput">
+					</div>
+					<div class="contactFields">
+						<label class="contactLabel" for="emailInput">Email:</label><span class="requiredFieldStar">*</span>
+						<input class="contactInput requiredField" type="text" maxlength="255" title="emailInput" name="emailInput" id="emailInput">
+					</div>
+					<div class="contactFields">
+						<label class="contactLabel" for="phoneInput">Phone Number:</label>
+						<input class="contactInput" type="text" title="phoneInput" name="phoneInput" id="phoneInput">
+					</div>
+					<div class="contactFields">
+						<label class="contactLabel commentLabel" for="commentInput">Comments:</label><span class="requiredFieldStar commentLabel">*</span>
+						<textarea class="contactInput requiredField" title="commentInput" name="commentInput" id="commentInput"></textarea>
+					</div>
+					
+					<div id="buttonWrapper">
+						<button id="submitContact">Submit</button><button id="cancelContact">Cancel</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+
+
+
+</body></html>

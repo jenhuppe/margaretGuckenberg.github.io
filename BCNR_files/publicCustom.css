@@ -1,0 +1,3298 @@
+﻿caption {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+table {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+legend {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+label {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+form {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+fieldset {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+li {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ul {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ol {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+dd {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+dt {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+dl {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+q {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+img {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+em {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+dfn {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+del {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+code {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+address {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+acronym {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+abbr {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+a {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+pre {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+blockquote {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+p {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+h6 {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+h5 {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+h4 {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+h3 {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+h2 {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+h1 {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+/*iframe {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}*/
+object {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+span {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+div {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+html {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+td {text-align:left;font-weight:normal;}
+th {text-align:left;font-weight:normal;}
+caption {text-align:left;font-weight:normal;}
+q:after {content:"";}
+q:before {content:"";}
+blockquote:after {content:"";}
+blockquote:before {content:"";}
+q {quotes:"" "";}
+blockquote {quotes:"" "";}
+a img {border:none;}
+
+body {
+	height:auto;
+}
+
+html {
+	height:auto;
+}
+
+body{
+	margin:0;
+}
+
+
+.clear{
+	clear:both;
+}
+
+/*the follow are just resets*/
+body {
+    line-height: 1.5;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+td {
+    font-weight: normal;
+    text-align: left;
+}
+th {
+    font-weight: normal;
+    text-align: left;
+}
+caption {
+    font-weight: normal;
+    text-align: left;
+}
+q:after {
+    content: "";
+}
+q:before {
+    content: "";
+}
+blockquote:after {
+    content: "";
+}
+blockquote:before {
+    content: "";
+}
+q {
+    quotes: "" "";
+}
+
+
+blockquote {
+    quotes: "" "";
+}
+a img {
+    border: medium none;
+}
+/*end resets*/
+
+
+
+/*=====END SCROLLING OVER-RIDES=====*/
+
+
+/*=====OOTB CHANGES=====*/
+
+ 
+form{
+	height:100%;
+}
+
+/*this might be a duplicate of the next style, I'm not sure if it's required as well*/
+body #s4-ribbonrow{
+	background:#024272;
+}
+
+/*background color of the ribbon*/
+body #s4-ribboncont{
+	background:#024272;
+}
+
+/*wrapper for the main ribbon container*/
+.ms-cui-topBar2{
+	border-bottom:0;
+	height:44px;
+}
+
+.s4-ribbonrowhidetitle {
+    height: auto!important;
+}
+
+/*table that is inserted by sharepoint and wraps page content, like the list settings page*/
+.ms-listedit{
+	margin:0;
+}
+
+/*table that contains edit view forms*/
+table.ms-v4propertysheetspacing{
+	margin:0;
+}
+	
+	/*h3 on edit view forms*/
+	table.ms-v4propertysheetspacing td.ms-sectionheader h3.ms-standardheader a{
+		cursor:pointer;
+	}
+
+/*descriptive text for sections*/
+.ms-createpageinformation table td {
+	font-size:13px;
+	font-family:Verdana, Arial, sans-serif;
+	color:#1c1c1c;
+	line-height:18px;
+	padding:10px 0px;
+}
+
+.ms-pageinformation table td {
+	font-size:13px;
+	font-family:Verdana, Arial, sans-serif;
+	color:#1c1c1c;
+	line-height:18px;
+	padding:10px 0px;
+}
+
+td.ms-descriptiontext {
+	font-size:13px;
+	font-family:Verdana, Arial, sans-serif;
+	color:#1c1c1c;
+	line-height:18px;
+	padding:5px 0px;
+}
+
+/*remove the styles for the list information section from the above style*/
+.ms-createpageinformation table td{
+	padding:0px;
+}
+
+.ms-pageinformation table td{
+	padding:0px;
+}
+
+/*links at the bottom of sections, such as "Create Column" "Add from existing site columns"*/
+td.ms-linksectionitemdescription{
+	padding:5px 0;
+}
+
+	td.ms-linksectionitembullet{
+	padding:5px 0;
+}
+
+	td.ms-linksectionitemdescription a:hover{
+		text-decoration:underline;
+	}
+
+
+	td.ms-linksectionitembullet a:hover{
+		text-decoration:underline;
+	}
+
+
+/*main background for the content that appears when you click on one of the tabs in the ribbon*/
+div.ms-cui-tabContainer{
+	background:#fff;
+	border-bottom:solid 1px #b3b3b3;
+	border-bottom:solid 1px #818181;
+	position:absolute;
+	z-index:999;
+	top:44px;
+	width:100%;
+	box-shadow:inset 0px 16px 25px #333;
+}
+
+
+/*panel that appears when you add a web part to a page.  It says "updating" or "loading", etc.*/
+div#WebPartAdderUpdatePanelContainer{
+	position:absolute;
+	top:135px;
+	width:100%;
+	z-index:9999;
+}
+
+/*web part edit pane*/
+table.ms-ToolPaneOuter{
+	position:absolute;
+	z-index:9999;
+	float:right;
+	right:50px;
+	top:140px;
+}
+
+/*where it says the user you're logged in as on the page*/
+span.ms-welcomeMenu{
+	font-size:10px;
+}
+
+/*alternating rows in sharepoint tables*/
+tr.ms-alternatingstrong {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #D8D8D8;
+    border-top: 1px solid #D8D8D8;
+}
+
+/*i'm not sure where these are used*/
+.ms-viewareaframe {
+    border: 0 none !important;
+    padding: 0 !important;
+}
+
+.ms-bodyareaframe {
+    border: 0 none !important;
+    padding: 0 !important;
+}
+
+/*header cells in sharepoint tables*/
+th.ms-vh2-nograd {
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    padding: 5px 5px 1px 3px;
+}
+
+.ms-vb {
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+    vertical-align: top !important;
+}
+
+/*i believe this is not used in 2010*/
+.ms-vb img {
+    left: 0;
+    padding-right: 5px;
+    position: relative;
+    top: 5px;
+    vertical-align: top;
+}
+
+
+.ms-summarystandardbody .ms-vb2  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vb a:link  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vb2 a:link  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vb-user a:link  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh2  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh-icon  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh-icon-empty  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vhImage  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-gb  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-gb2  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-gbload  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vb  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vb2  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vb-tall  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vb-user  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh2-nograd  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh3-nograd  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh2-nograd-icon  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-vh2-nofilter-icon  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-pb  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-pb-selected  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-ph  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-listedit .ms-gb .ms-vh2-nofilter  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+.ms-listedit .ms-gb .ms-vh2  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding:0;
+}
+
+/*add padding to the left and right of cells in tables*/
+td.ms-vb2{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+/*.ms-vb2 are cells inside sharepoint tables that contain data without links, and display text, such as description*/
+.ms-listviewtable .ms-vb2  {
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:24px;
+    color:#1c1c1c;
+	padding-bottom:10px;
+}
+
+.ms-viewlsts .ms-vb2{
+	vertical-align:top!important;
+	padding-bottom:10px;
+}
+
+.ms-viewlsts .ms-vb-icon{
+	vertical-align:top!important;
+}
+
+td.ms-vb2{
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+td.ms-vb2 div{
+	padding:0;
+}
+
+.ms-vb-title .ms-vb{
+	padding:0;
+}
+
+/*over-write the padding for items that are not inside a table.  SharePoint uses this style for tds that contain tables*/
+.ms-listedit .ms-gb{
+	padding-top:0;
+}
+
+/*cell that holds icons in tables, including checkboxes*/
+.ms-vh-icon{
+	padding-right:5px;
+}
+
+/*over-write the padding so that headers in tables don't have extra padding*/
+.ms-listedit .ms-gb .ms-vh2{
+	padding:5px 0;
+}
+
+.ms-listedit .ms-gb .ms-vh2-nofilter{
+	padding:5px 0;
+}
+
+.ms-vb-user a:link {
+	color:#024272!important;
+}
+	
+	.ms-vb2 a:link {
+	color:#024272!important;
+}
+	
+	.ms-vb a:link {
+	color:#024272!important;
+}
+	
+	/*.ms-vb2 are cells inside sharepoint tables that contain data without links, and display text, such as modified dates*/
+	div.listContent .ms-vb2{
+		background:url('../images/publicCustomImages/square.gif') 0px 10px no-repeat;
+		padding-left:10px!important;
+	}
+
+	/*add a white border around items in a list so that when they are hovered, with a colored border, the items don't "jump"*/
+	table.ms-listviewtable > tbody > tr > td {
+		border-top:solid 1px #EBEBEB!important;
+		border-bottom:solid 1px #fff!important;
+	}
+
+		/*hover border for items in lists*/
+		tr.ms-itmhover:hover > td{
+			border-top:solid 1px #91cdf2!important;
+			border-bottom:solid 1px #c6e5f8!important;
+		}
+
+td.ms-vb-title div a{
+	font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:20px!important;
+	padding:0;
+}
+
+td.ms-vb-title div{
+	font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height:20px!important;
+	padding:0;
+}
+
+.ms-vb-itmcbx{
+	padding:0;
+}
+
+/*the drop down arrow in list tables for editing*/
+div.s4-ctx{
+	padding:0 5px!important;
+}
+
+
+/*some of the vb2 cells contain an extra div, for instance description*/
+.ms-vb2 div {
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    padding-bottom: 15px;
+    padding-top:0px;
+}
+
+/*cells in the title column in sharepoint tables*/
+.ms-vb-title {
+    border: 0 none !important;
+    padding:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:15px;
+}
+
+.ms-vb-title a{
+
+}
+
+/*cells in the icon column in sharepoint tables*/
+.ms-vb-icon {
+    border: 0 none !important;
+    vertical-align:top!important;
+}
+
+/*the header row in sharepoint tables*/
+div.listContent .ms-viewheadertr{
+	display:none;
+}
+
+/*div.listContent div.ms-wpContentDivSpace{
+	padding-top:5px;
+}*/
+
+/*div that contains the actual header text, inside the vh cell*/
+div.ms-vh-div{
+	padding:0;
+	margin:0;
+	font-size:13px;
+	font-family:Verdana, Arial, sans-serif
+}
+
+/*header cell that contains div.ms-vh-div*/
+th.ms-vh2{
+	padding:0;
+}
+	
+	/*sharepoint adds a div surrounding the headers that had a margin around it*/
+	th.ms-vh2 div{
+		margin:0;
+	}
+
+/*Adding padding back to the table headers, giving them a background when they aren't hovered over*/
+.ms-viewheadertr th{
+	background-color:#f6f6f6;
+	border-color:#e2e2e2!important;
+	padding-left:5px!important;
+}
+
+/*checkbox next to items in list views*/
+.s4-itm-selected .s4-itm-inlineedit {
+	top:5px!important;
+}
+
+.s4-itm-hover .s4-itm-inlineedit {
+	top:5px!important;
+}
+
+.ms-itmhover:hover .s4-itm-inlineedit {
+	top:5px!important;
+}
+
+.ms-inlineEditLink .s4-itm-inlineedit {
+	top:5px!important;
+}
+
+.s4-itm-selected .s4-itm-cbx {
+	top:5px!important;
+}
+
+.ms-itmhover:hover .s4-itm-cbx {
+	top:5px!important;
+}
+
+.s4-itm-hover .s4-itm-cbx {
+	top:5px!important;
+}
+
+input.s4-itm-cbx [style] {
+	top:5px!important;
+}
+
+/*paging at the bottom of list web parts*/
+.ms-paging{
+	font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6D6F72;
+    padding-top:10px;
+}
+
+	/*link that is the arrow in the paging td*/
+	#bottomPagingCellWPQ2 a{
+		display:inline-block;
+	}
+
+
+
+/*=====END OOTB CHANGES=====*/
+
+
+/*===============CALENDAR STYLES===============*/
+
+/*surrounding div for the calendar table. OOTB has 4px margin. reduced to 1px*/
+.ms-acal-rootdiv{
+	margin-left:1px;
+}
+
+/*day header for the calendar month view*/
+.ms-acal-month-top{
+	padding:0px;
+	font-size:12px;
+}
+
+/*day number for the days in month view*/
+tr.ms-acal-summary-dayrow td{
+	font-size:11px;
+	background-color: #F5F6F7;
+	border-right:1px solid #D9DDE1;
+}
+	
+	/*div that MS puts inside the day number cell*/
+	.ms-acal-summary-dayrow td div{
+		margin:0px;
+		padding:0px;
+		padding-left:5px;
+	}
+	
+	/*div that contains the day data*/
+	.ms-acal-summary-itemrow td div{
+		margin:0;
+	}
+
+.ms-acal-summary-itemrow td{
+	border-right: 1px solid #D9DDE1;
+	border-top: 1px solid #D9DDE1;
+}
+
+/*day header for the calendar in day view*/
+.ms-acal-day-top{
+	font-size:12px;
+}
+
+/*time header for the calendar in day view*/
+th.ms-acal-detailtime, th.ms-acal-detailtime a{
+	font-size:12px!important;
+}
+
+.ms-acal-sdiv, .ms-acal-mdiv, .ms-acal-ddiv{
+	color:#3B4F65;
+}
+
+/*events in calendars*/
+.ms-acal-item, .ms-acal-default-hover, .ms-acal-selected, .ms-acal-default-hover{
+	font-size:9px;
+	background:#FFC309;
+	border:0px;
+	border-bottom:solid 1px #ebebeb;
+}
+
+	.ms-acal-item a, .ms-acal-default-hover a, .ms-acal-selected a, .ms-acal-default-hover a{
+		font-size:9px!important;
+	}
+	
+	.ms-acal-sdiv a, .ms-acal-mdiv a, .ms-acal-ddiv a{
+		color:#024272;
+	}
+	
+	.ms-acal-selected, .ms-acal-selected div{
+		color:#ae2030!important;
+	}
+
+
+/*===============END CALENDAR STYLES===============*/
+
+/*===============RIBBON STYLES===============*/
+
+/*background color of the action items in the ribbon.  this is the UL that holds the items*/
+.ms-cui-tabBody{
+
+}
+/*===============END RIBBON STYLES===============*/
+
+
+
+/*===============STICKY FOOTER STYLES===============*/
+* {margin:0;padding:0;} 
+
+#ctl00_MSO_ContentDiv{
+
+}
+
+#main {}  /* must be same height as the footer */
+
+#footer {} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+}
+/*===============END STICKY FOOTER STYLES===============*/
+
+
+
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('../fonts/Quattrocento.ttf') format('truetype');
+    font-style: normal;
+
+}
+
+body{
+	background:url('../images/publicCustomImages/topBlueBG.png') top left repeat-x;
+	background-position:0 -45px;
+	color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+}
+	/*make the background white in popup windows
+	.ms-dialog-nr body, .ms-dialog body{
+		background:#fff;
+	}
+*/
+
+p{
+	margin:0;
+}
+
+#headerArea{
+	width:100%;
+	height:230px;
+	background:#024272;
+	border-bottom:solid 1px #fff;
+	box-shadow: 0px 4px 4px 0px #414141;
+}
+
+
+#mainContent{
+}
+
+#leftNav{
+	background: url('../images/leftNavTopBG.gif') repeat-x scroll left top #F9F9F9;
+	background-position:left -2px;
+    border-bottom: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    float: left;
+
+    width: 230px;
+    position:absolute;
+    left:0;
+    top:480px;
+}
+    
+    /*dont display the header in popups.  popups are entry form popups, etc.*/
+	.ms-dialog div#leftNav{
+		display:none!important;
+	}
+    
+    .ms-dialog-nr div#leftNav{
+		display:none!important;
+	}
+    
+    div#leftNavShadow{
+		height:8px;
+		width:231px;
+		background:url('../images/leftNavShadowBG.png') top right;
+	}
+	
+	/*div that surrounds the links in the left nav, with padding*/
+	div#leftNav div#s4-leftpanel{
+		line-height: 18px;
+    	margin-left: 30px;
+    	padding-left: 20px;
+    	width: 180px;
+	}
+	
+	span#coursesLine {
+    background: none repeat scroll 0 0 #FDFDFD;
+    display: block;
+    height: 1px;
+    line-height: 1px;
+    margin-left: 30px;
+    margin-right: 10px;
+    width: 170px;
+}
+	
+	/*div that surrounds the links in the left nav, inserted by sharepoint inside the s4-leftpanel div*/
+	div#leftNav div#zz16_V4QuickLaunchMenu{
+		
+	}
+	
+	/*style given to the surrounding div of the left navigation that is inserted by sharepoint that adds margin*/
+	div#leftNav div.s4-ql{
+		margin:0;
+	}
+
+	div#leftNav a {
+    	color: #AE2030!important;
+    	cursor: pointer !important;
+    	font-family: Tahoma,Arial,sans-serif;
+    	font-weight: normal;
+	}
+		
+		/*the text of the left navigation links*/
+		div#leftNav span.ms-splinkbutton-text{
+			border-bottom: 1px solid #DCDCDC;
+    		display: block;
+    		font-size: 22px;
+    		margin-left: 30px;
+    		margin-right: 10px;
+    		padding-bottom: 18px;
+    		padding-top: 22px;
+    		text-decoration: none;
+		}
+		
+		/*style for the list that stores the recycle bin and all site content links*/
+		div#leftNav ul.s4-specialNavLinkList{
+			padding:0px;
+			padding-right:10px;
+			border:0px;
+			margin:0;
+		}
+			
+			/*list items of the recycle bin and all site content links*/
+			div#leftNav ul.s4-specialNavLinkList li{
+				padding:0;
+				border:0;
+			}
+			
+			/*over-ride the in-line style of the icons for the recycle bin and all site content links*/
+			div#leftNav ul.s4-specialNavLinkList s4-specialNavIcon[style]{
+				display:inline-block!important;
+				float:left;
+				left:0;
+			}
+			
+			/*text for the recycle bin and all site content links*/
+			div#leftNav ul.s4-specialNavLinkList span.ms-splinkbutton-text{
+    			font-size: 14px;
+    			margin-left: 0px;
+    			margin-right: 10px;
+    			padding:0;
+    			text-decoration: none;
+    			float:left;
+				border-bottom: 0px;
+			}
+			
+			/*give the padding to the links themselves rather than the UL?*/
+			div#leftNav .s4-specialNavLinkList a{
+				padding:0px;
+				padding-bottom: 18px;
+    			padding-top: 22px;
+    			padding-left:10px;
+    			display:block;
+    			border-bottom: 1px solid #DCDCDC;
+			}
+	
+		div#leftNav a#siteContentLink{
+			border-bottom: 1px solid #DCDCDC;
+    		display: block;
+    		font-size: 22px;
+    		margin-left: 30px;
+    		margin-right: 10px;
+    		padding-bottom: 18px;
+    		padding-top: 22px;
+    		text-decoration: none;
+		}
+	
+	div#leftNav ul.root li.static{
+		padding-right:10px;
+	}
+		
+		/*left navigation links and left navigation items that don't have a hyperlink*/
+		div#leftNav ul.root li.static a, div#leftNav ul.root li.static span.static span.menu-item-text{
+			display: block;
+    		font-size: 14px !important;
+    		padding-bottom: 15px;
+    		padding-left: 10px;
+    		padding-top: 15px;
+    		border-bottom: 1px solid #DCDCDC;
+		}
+		
+		/*change the color for left navigation "Folders" that don't have a link*/
+		div#leftNav ul.root li.static span.static{
+			padding:0;
+			color: #AE2030;
+   	 		font-family: Verdana,Arial,sans-serif;
+    		font-size: 13px;
+		}
+	
+		div#leftNav ul.root li ul.dynamic{
+			background: none repeat scroll 0 0 #F9F9F9;
+    		border-bottom: 1px solid #DCDCDC !important;
+    		border-right: 1px solid #DCDCDC;
+    		border-top: 1px solid #DCDCDC !important;
+    		box-shadow: 1px 0 3px rgba(50, 50, 50, 0.1);
+    		overflow: hidden;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    		width: auto;
+    		z-index: 999 !important;
+		}
+		
+				
+		
+
+/*paragraphs and text that are plain text on the page, information at the top of pages, such as list information*/
+.Campaign{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.newsRollupDescription{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.ms-rtestate-field{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.ms-rtestate-write{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.ms-createpageinformation th{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.ms-pageinformation th{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+	
+	/*pageinformation is the table that stores the table information at the top of list settings pages*/
+	table.ms-pageinformation, table.ms-createpageinformation{
+		background:none;
+	}
+	
+	.ms-pageinformation table th{
+		padding:0px;
+		line-height:24px;
+	}
+
+
+.ms-formbody{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+div.answer{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+p{
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.newsRollupDescription{
+	padding-top:0;
+}
+
+/*in the list information section, the actual data about the list such as the name, address, description*/
+.ms-pageinformation table td, .ms-createpageinformation table td{
+	color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/*italicized paragraphs.  the q style should probably be used instead of this*/
+p.quote {
+    font-style: italic;
+}
+
+/*right aligned paragraphs*/
+p.right {
+    text-align: right;
+}
+
+p.bottomBorder{
+	border-bottom:solid 1px #d7d7d7;
+}
+
+p.paddingBottom{
+	padding-bottom:25px;
+}
+
+ol{
+	margin-left: 25px;
+    padding-top: 5px;
+}
+
+ul {
+    list-style: square outside none;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+ul li {
+    background: none repeat scroll 0 0 transparent;
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+ul ul{
+	padding-top:0px;
+	padding-left:15px;
+}
+
+ul ul li{
+	padding-bottom: 0px;
+    padding-top: 10px;
+
+}
+
+/*header of the site, contains the logos*/
+h1#siteH1 {
+    float: left;
+    width: 100%;
+    margin-top:5px;
+}
+
+	h1#siteH1 span.h1Logos {
+	    background: url("../images/publicCustomImages/smallHeaderLogos.png") no-repeat scroll left top transparent;
+	    display: block;
+	    float: left;
+	    height: 81px;
+	    margin-right: 10px;
+	    text-indent: -9999px;
+	    width: 215px;
+	}
+
+		h1#siteH1 span.h1Logos a{
+			display:block;
+		}
+
+	h1#siteH1 span#siteLink{
+		display:block;
+		width:auto;
+		color:#fff;
+		text-decoration:none;
+		font-family:'Quattrocento';
+	}
+	
+		h1#siteH1 span#siteLink a{
+			display:block;
+			width:auto;
+			color:#fff;
+			text-decoration:none;
+			font-family:'Quattrocento', "Times New Roman", Times, serif;
+			font-size:24px;
+			line-height:20px;
+		}
+	
+	h1#siteH1 span#DONLink{
+		display:block;
+		width:auto;
+		color:#fff;
+		text-decoration:none;
+		font-family:'Quattrocento';
+		margin-top:8px;
+	}
+	
+		h1#siteH1 span#DONLink a{
+			display:block;
+			width:auto;
+			color:#fff;
+			text-decoration:none;
+			font-family:'Quattrocento', "Times New Roman", Times, serif;
+			font-size:30px;
+			line-height:40px;
+		}
+	
+	
+		
+/*on the pages, this is what contains the image that displays at the top of the page*/
+h2.ms-pagetitle {
+    height: 366px;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-indent: -9999px;
+    width: 958px;
+    /*background-image:url('/donaa/Header Images/topImage.jpg');*/
+    background-repeat:no-repeat;
+    background-position:0px 1px;
+}
+
+
+h4{
+	font-weight:normal;
+	color: #024272;
+}
+
+/*the quote for each page that appears below the header image, with the black background and white text*/
+h3.pageQuote {
+    background: url('../images/publicCustomImages/pageQuoteBG.png') 0 0;
+ 	padding-top:25px;
+ 	bottom:1px;
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:30px;
+    font-weight:normal;
+    color:#fff;
+    text-shadow: 1px -1px 0px #000;
+    height: 105px;
+    line-height: 36px;
+    margin-left: 1px !important;
+    margin-right: 0;
+    padding-left: 0;
+    position: absolute;
+    text-align: center;
+    width: 958px;
+    z-index: 99;
+}
+
+/*Single line of text style for the text that is displayed on the headers of each page on top of the page header image*/
+h3.singleLinePageQuote{
+	height:63px;
+	padding-top:20px;
+}
+
+/*generic h3 style*/
+h3.ms-rteElement-H3 {
+    color: #024272;
+    font-weight:normal;
+    font-size:16px;
+    padding-top:5px;
+}
+
+
+.ms-standardheader,  .ms-pageinformation h3.ms-standardheader{
+    color: #024272!important;
+    font-weight:normal!important;
+    font-size:16px!important;
+    padding-top:5px!important;
+    border:0;
+    padding-left:0;
+    padding-right:0;
+}
+
+/*the header for settings page sections, like on the navigation page*/
+.ms-inputformheader{
+	padding-left:0px;
+}
+
+
+h3 {
+    color: #024272;
+    font-weight:normal;
+    font-size:16px;
+    padding-top:5px;
+}
+
+
+.ms-WPBody h3 {
+    color: #024272;
+    font-weight:normal;
+    font-size:16px;
+    padding-top:5px;
+}
+
+
+div.clear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+
+/*hover state for the web part titles*/
+.ms-WPTitle a:hover {
+    cursor: text;
+    text-decoration: none;
+}
+
+/*web part titles, group header titles in web parts, description title of lists*/
+/*.ms-bg was removed from this*/
+div.article-title{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+	
+	.ms-linksection-level1 h3{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+	
+	.ms-linksectionheader, .ms-linksectionheader[style]{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+
+	td.ms-linksectionheader[style]{
+		padding-left:0px!important;
+		border-bottom: solid 1px #024272!important;
+	}
+	
+	.ms-listdescription{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+	
+	.ms-gb a{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+	
+	.ms-WPTitle a{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+	
+	.ms-standardheader a{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+	
+	.ms-WPTitle{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+
+/*titles above the sections on the site actions page*/
+.ms-gb h3.ms-standardheader{
+	color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+
+/*Shows up as a style to select from the ribbon*/
+.ms-rteStyle-RedHeading{
+	color: #AE2030 !important;
+	-ms-name:"Red Title Heading"; 
+    cursor: text;
+    
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    padding-bottom:3px;
+    text-decoration: none;
+    border-bottom:solid 1px #AE2030;
+}
+
+	
+	der{
+    color: #AE2030 !important;
+    cursor: text;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    padding: 15px 0 0;
+    text-decoration: none;
+}
+	
+	/*remove the padding from news article titles from the style above*/
+	div.article-title{
+
+	}
+
+/*headers on the site actions page, removing the padding from the above style*/
+
+/*headers on the site actions page, removing the padding from the above style*/
+.ms-linksection-level1 h3{
+	padding:0;
+}
+
+/*remove the background of the list title header*/
+.ms-listdescription {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+/*tds in data tables*/
+.ms-gb tr td{
+	border-top:solid 1px #ccc;
+}
+
+.ms-gb a {
+    cursor: pointer;
+}
+td.ms-formlabel {
+    padding-top: 0;
+    vertical-align: top;
+}
+td.ms-formbody {
+    line-height: 18px !important;
+}
+td.ms-formlabel h3.ms-standardheader {
+    padding-top: 0;
+}
+
+/*red border underneath web part titles*/
+.ms-WPHeader TD {
+    border-bottom: 1px solid #AE2030;
+}
+
+/*sharepoint added a border with no color around the drop down arrow section of web part titles, which added a space between the web part title border, even when not hovering over it*/
+.ms-WPHeaderTdMenu{
+	border:0;
+}
+
+/*remove the border from web parts with the border style selected*/
+.ms-WPBorder, .ms-WPBorderBorderOnly{
+	border:0px;
+}
+
+/*make the font size of empty web parts inherit*/
+.ms-WPBody{
+	color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/*when you click on the area of of list or webpart, it would place a blue border around it*/
+.s4-wpActive .s4-wpTopTable, .s4-wpActive .ms-WPSelected {
+    border: 1px solid #fff;
+}
+
+/*keep the border underneath web part titles red when the web part is selected in page edit*/
+.s4-wpcell .ms-WPSelected .ms-WPHeader td{
+	border-bottom: 1px solid #AE2030;
+}
+.s4-wpActive .ms-WPHeader td{
+	border-bottom: 1px solid #AE2030;
+}
+.s4-wpcell:hover .ms-WPHeader td{
+	border-bottom: 1px solid #AE2030;
+}
+table#onetIDListForm {
+    width: 100%;
+}
+
+div.ms-wpContentDivSpace{
+	margin:0;
+}
+
+
+.ms-WPHeader .ms-wpTdSpace{
+	display:none;
+}
+
+table#onetIDListForm .ms-toolbar {
+}
+
+table#onetIDListForm .ms-formtoolbar {
+}
+
+table.ms-formtoolbar td.ms-toolbar {
+}
+
+div.ms-areaseparatorright {
+    display: none;
+}
+
+div.ms-PartSpacingVertical {
+    display: none;
+}
+
+.ms-formbody {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+/*wrapper that holds all page content*/
+div#wrapperDiv {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 980px;
+}
+
+/*div that contains logos and date*/
+div#headerDiv {
+    overflow: hidden;
+    margin-top:-1px;
+    padding:0 10px;
+}
+
+	/*dont display the header in popups.  popups are entry form popups, etc.*/
+	.ms-dialog div#headerDiv{
+		display:none!important;
+	}
+	
+	.ms-dialog-nr div#headerDiv{
+		display:none!important;
+	}
+	
+/*div that wraps the h2 header image and h3 page description*/
+#pageBanner {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0 auto;
+    width: 960px !important;
+    position:relative;
+}
+
+/*div that contains today's date in the header div*/
+div.date {
+    width: 460px;
+    margin-left:500px;
+    position:absolute;
+    top:10px;
+    z-index:999;
+} 
+	/*paragraph that displays the text*/
+	div.date p {
+    	color: #FFFFFF;
+    	font-family: Tahoma,Arial,sans-serif;
+    	font-size: 12px;
+    	line-height: 9px;
+    	text-align: right;
+    	width:200px;
+    	float:right;
+	}
+
+/*div that contains the search bar*/
+div#searchDiv {
+    float: right;
+    text-align: right;
+    width: 960px;
+    top:85px;
+    position:absolute;
+    z-index:1;
+}
+
+/*table that surrounds the search bar and button. default is float left*/
+.ms-sbtable-ex{
+	float:right;
+	
+}
+/*table that surrounds the search bar and button. default is float left*/
+table.s4-wpTopTable .ms-sbtable-ex{
+}
+
+
+.ms-searchform {
+    margin: 0;
+    top: auto;
+}
+
+/*input box for the search*/
+.s4-search input.ms-sbplain {
+    border-color: #023962 #023962 #165D93 #19649E!important;
+    border-style: solid!important;
+    border-width: 1px!important;
+    color: #505050!important;
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    padding: 5px;
+    height:18px!important;
+}
+
+/*td that contains the link for the search button*/
+div#searchDiv td.ms-sbgo {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #024272;
+    border-color: #165D93 #165D93 #023962 #023962;
+    border-style: solid;
+    border-width: 1px 1px 1px 2px;
+    height: 28px;
+    width: 28px;
+}
+
+	/*active state for the search button. when a user clicks down on it*/
+	div#searchDiv td.ms-sbgo:active{
+		border-color: #023962 #023962 #165D93 #165D93;
+    	border-style: solid;
+    	border-width: 1px 1px 1px 2px;
+	}
+
+/*link for the search button - magnifying glass*/
+div#searchDiv td.ms-sbgo a {
+    background: url("../images/publicCustomImages/searchIcon.png") repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/*hover state for the link for the search button - magnifying glass*/
+div#searchDiv td.ms-sbgo a:hover {
+    background: url("../images/publicCustomImages/searchIconHover.png") repeat scroll 0 0 transparent;
+}
+
+/*hide the image that sharepoint displays by default for the search button*/
+div#searchDiv td.ms-sbgo a img {
+    display: none;
+}
+
+div#navigationDiv{
+    margin: 25px 12px 0 10px;
+    width: 960px;
+    background:url('../images/publicCustomImages/navigationShadow.png')bottom repeat-x;
+    height:33px;
+}
+	
+	/*don't display the navigation in popup windows*/
+	.ms-dialog div#navigationDiv{
+		display:none;
+	}
+	.ms-dialog-nr div#navigationDiv{
+		display:none;
+	}
+div#zz15_TopNavigationMenuV4{
+	height:31px;
+}
+
+div.menu-horizontal{
+	height:31px;
+}
+
+/*div#navigationDiv *{
+	line-height:24px;
+}*/
+
+
+div#navigationDiv span{
+	font-family:Tahoma, Arial, sans-serif;
+	font-size:14px;
+}
+
+/*navigation links*/
+div#navigationDiv a {
+	border:0px;
+	color:#fff;
+	display:block;
+	height:24px;
+	vertical-align:baseline;
+	padding:0 18px;
+
+}
+
+/*ul that holds the links*/
+div#navigationDiv ul{
+	display:inline-block;
+}
+
+/*div#navigationDiv ul.root{
+	overflow:hidden;
+	display:block;
+}*/
+
+div#navigationDiv ul.root li{
+	background:none;
+		border:0;
+		color:#fff;
+		text-shadow: 1px -1px 0px #082f4c;
+		font-family:Tahoma, Arial, sans-serif;
+		font-size:14px!important;
+	line-height:14px;
+}
+	
+	div#navigationDiv ul li a:hover{
+		text-decoration:none;
+	}
+
+/*this was added to remove the left border from the first link in the top nav.  The styles are repeated below because sharepoint does not give any other way of targeting just the first link*/
+div#navigationDiv ul li a{
+	border-left:0px;
+	border-right:solid 1px #19649e;
+	line-height:24px;
+	display:inline-block;
+	height:33px;
+}
+
+/*im not sure why sharepoint added this.  it ends up being a span that contains the actual text of the link.*/
+div#navigationDiv a span.additional-background, .s4-tn li.static > .menu-item span.additional-background{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	line-height:24px;
+}
+	
+/*i dont remember why i broke this out from the above navigation link style.  I think sharepoint broke it out as well and was applying styles that had to be over-ridden. it stretches 100% width of the link*/
+div#navigationDiv ul li ul li a, .s4-tn li.static > .menu-item{
+	display:inline-block;
+	height:33px;
+	border-left:solid 1px #023962;
+	border-right:solid 1px #19649e;
+	line-height:24px;
+}
+	
+	/*style for the top navigation items that dont have a link.  This is the style that sharepoint applies, so it is copied exactly to over-write it*/
+	.s4-tn li.static > .menu-item{
+		color:#fff;
+		border-top:0;
+		border-bottom:0;
+		padding:0 18px;
+		cursor:pointer;
+	}
+	
+	/*hover state for navigation links, it displays the yellow border at the bottom of the link*/
+	div#navigationDiv ul li a:hover, .s4-tn li.static > .menu-item:hover{
+		color: #FFC309;
+		background:url("../images/navigationHoverLine.png") repeat-x;
+	}
+	
+/*the currently selected link that displays a yellow border underneath the text*/
+div#navigationDiv ul li a.selected{
+	color: #FFC309;
+	height:33px;
+	background:url("../images/navigationHoverLine.png") repeat-x;
+}
+
+	div#navigationDiv ul.root ul.static ul.dynamic{
+		border:0px;
+		padding:0;
+		margin:0;
+		box-shadow: 0px 0px 2px 1px #333;
+}
+	
+	div#navigationDiv ul.root ul.static ul li{
+		border:0px;
+		padding:0;
+		margin:0;
+	}
+	
+	div#navigationDiv ul.root ul.static ul li a{
+		background: none repeat scroll 0 0 #024272;
+    	border-bottom: 1px solid #023962;
+    	border-left: 7px solid #024272;
+    	border-top: 1px solid #19649E;
+    	border-right:0px;
+    	color: #FFFFFF;
+    	display: block;
+    	font-size: 14px;
+    	line-height: 14px;
+    	padding-top:15px;
+    	padding-bottom:3px;
+	}
+	
+		div#navigationDiv ul.root ul.static ul li a:hover{
+			background:#023962;
+			border-left:solid 7px #ffc309;
+			color:#ffc309;
+		}
+
+div#sharePointMainContent{
+	width:100%;
+	overflow: hidden;
+}
+
+div.blank-wp{
+	padding:0px;
+}
+
+div.welcome{
+	padding:0px;
+}
+
+/*iframe[style]{
+	width:960px!important;
+	height:100%!important;
+	min-height:100%!important;
+}*/
+
+span.ms-imnSpan{
+	white-space:normal;
+	display:inline-block;
+}
+
+
+
+/*========================THE FOLLOWING STYLES ARE FROM 2007 AND CAN BE DELETED========================*/
+table#zz1_TopNavigationMenu {
+    margin-left: -19px;
+    position: relative;
+}
+.ms-topnavselected {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+.ms-topnav {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 14px;
+}
+.ms-topNavHover a {
+    background: url("../images/publicCustomImages/navigationHoverLine.png") repeat-x scroll left top transparent;
+    color: #FFC309;
+}
+.ms-topnavselected a {
+    background: url("../images/publicCustomImages/navigationHoverLine.png") repeat-x scroll left top transparent;
+    color: #FFC309;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.ms-topnav a {
+    display: block;
+    height: 33px;
+    margin-top: 2px;
+    padding: 0 18px;
+}
+
+td#zz1_TopNavigationMenun7 table td a {
+    padding: 0 20px;
+}
+
+div#siteActionsDiv {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*======================== END OF 2007 STYLES THAT CAN BE DELETED ========================*/
+
+
+
+/*div that wraps the pageBanner div.  It contains a shadow background that is behind the image h2*/
+div#bannerDiv {
+    background: url("../images/publicCustomImages/bannerShadow.png") no-repeat scroll left top transparent;
+    height: 376px;
+    overflow: visible;
+    position: relative;
+}
+	
+	/*don't display the banner in popup windows*/
+	.ms-dialog div#bannerDiv{
+		display:none;
+	}
+
+	.ms-dialog-nr div#bannerDiv{
+		display:none;
+	}
+
+/*div that contains the main body content*/
+div#bodyDiv {
+    padding: 15px 10px 50px;
+}
+
+	/*remove the padding for the body in popup windows
+	.ms-dialog-nr div#bodyDiv, .ms-dialog div#bodyDiv{
+		padding:10px;
+		padding-left:5px;
+		margin-top:150px;
+		width:960px;
+
+	}
+	
+	.ms-dialog-nr div#sharePointMainContent, .ms-dialog div#sharePointMainContent{
+		width:960px;
+	}
+	
+	.ms-dialog-nr table#onetIDListForm, .ms-dialog table#onetIDListForm{
+		width:960px;
+	}
+	
+	.ms-dialog table#formTb, .ms-dialog .ms-formtoolbar{
+		width:960px;
+	}
+*/	
+/*all links inside the body*/
+div#bodyDiv a {
+    color: #024272;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+}
+
+/*hidden on Jan 22nd 2013*/
+div#breadcrumbs{
+	display:none;
+	float:left;
+	padding-left:20px;
+	padding-bottom:5px;
+}
+
+	div.globalBreadcrumbs{
+		width: auto;
+		float:left;
+		display: inline-block;
+	}
+	
+	div.pageTitleBreadcrumbs{
+		width: auto;
+		float:left;
+		display: inline-block;
+		padding-left:10px;
+		font-family: Tahoma,Verdana,sans-serif;
+   	 	font-size: 14px;
+   	 	line-height:26px;
+	}
+	
+	div.pageTitleBreadcrumbs a{
+		font-family: Tahoma,Verdana,sans-serif!important;
+   	 	font-size: 14px!important;
+   	 	line-height:14px;
+}
+	
+
+
+/*breadcrumbs containing span*/
+/*hidden on Jan 22nd 2013*/
+span#ctl00_ContentMap{
+	/*display: inline-block;*/
+	display:none;
+	padding-bottom:0px; /*35px minus the padding at the top of the body content*/
+}
+
+.pageTitle{
+	padding-left:15px;
+	font-size:14px!important;
+	font-family:Tahoma, Verdana, sans-serif;
+	line-height:16px;
+}
+	
+	.pageTitle a{
+		font-size:14px!important;
+	}
+	
+	/*breadcrumbs non-link text*/
+	span#ctl00_ContentMap span.ms-sitemapdirectional{
+		font-size:14px!important;
+		font-family:Tahoma, Verdana, sans-serif;
+		color:#1c1c1c;
+	}
+
+		/*breadcrumbs links*/
+		div#bodyDiv a.ms-sitemapdirectional{
+			font-size:14px!important;
+			font-family:Tahoma, Verdana, sans-serif;
+			color:#024272;
+		}
+
+/*text that is entered in the page content section of new pages (not in a web part)*/
+div.welcome-content{
+	padding-top:10px;
+}
+
+
+/*content div style that takes up the entire page*/
+div.wholeContent {
+    float: left;
+    width: 960px;
+}
+
+/*content div style that takes up the entire page when the page has the left navigation shown*/
+div.wholeContentWithLeftnav {
+    float: left;
+    width: 100%;
+}
+
+
+/*content div style that takes up the left 1/3 of the page*/
+div.leftContent {
+    float: left;
+    margin-right: 20px;
+    width: 290px;
+}
+
+/*content div style that takes up the left 2/3 of the page*/
+div.leftContentTwo {
+    float: left;
+    margin-right: 20px;
+    width: 650px;
+}
+
+/*content div style that takes up the left 590px of the page*/
+div.leftContentTwoSmall {
+    float: left;
+    margin-right: 20px;
+    width: 590px;
+}
+
+
+/*content div style that takes up the left 1/2 of the page*/
+div.leftHalf {
+    float: left;
+    margin-right: 10px;
+    width: 470px;
+}
+
+/*content div style that takes up the right 1/2 of the page*/
+div.rightHalf {
+    float: left;
+    margin-left: 10px;
+    width: 470px;
+}
+
+/*content div style that takes up the center 1/3 of the page*/
+div.centerContent {
+    float: left;
+    margin-right: 20px;
+    width: 340px;
+}
+
+/*content div style that takes up the right 1/3 of the page*/
+div.rightContent {
+    float: left;
+    width: 290px;
+}
+
+/*content div style that takes up 350px of the right side*/
+div.rightContentLarge {
+    float: left;
+    width: 350px;
+}
+
+
+/*the td that contains the questions of FAQs*/
+h3.faqQuestion {
+    padding-top: 15px;
+    display:block;
+}
+
+/*the link and text of FAQ questions*/
+h3.faqQuestion a {
+    cursor: pointer;
+    display:block;
+    font-weight: bold;
+}
+
+/*image that diplays the "new!" on new questions*/
+h3.faqQuestion img {
+    /*padding-left: 5px;
+    padding-top: 5px;*/
+}
+
+/*td that contains the FAQ answer. is not displayed until users click on the question*/
+div.answer {
+    display: none;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+div.questionText{
+	position: relative;
+}
+
+h3.faqQuestion{
+	position:relative;
+}
+
+div.questionText span, h3.faqQuestion span {
+    display: inline-block;
+    margin-right: 4px;
+    position: relative;
+    top: 2px;
+    width:18px;
+	height:13px;
+}
+
+	div.questionText span img, h3.faqQuestion span img {
+	    width:18px;
+	    height:13px;
+	}
+
+/*donaa division styles*/
+div.donaaDivision{
+	padding-bottom:15px;
+	padding-top:15px;
+	border-bottom:solid 1px #c2c2c2;
+}
+
+
+/*======================== RSS FEEDS STYLES ========================*/
+
+/*
+divs inserted by sharepoint that wrap the rss feeds items
+div#ctl00_ctl22_NavyFeeds_updatePanelctl00_ctl22_NavyFeeds{
+	display:none;
+}
+
+div#ctl00_ctl22_USMCFeeds_updatePanelctl00_ctl22_USMCFeeds{
+	display:none;
+}
+
+div#ctl00_ctl22_DoDFeeds_updatePanelctl00_ctl22_DoDFeeds{
+	display:none;
+}
+*/
+/*the RSS title for each rss feed, pulled from the site's rss feed*/
+div.rssFeed div.groupheader {
+	display:none;
+}
+
+div.rssFeed div[style]{
+	padding-top:0px!important;
+}
+	
+	/*div that wraps each rss entry*/
+	div.rssFeed div.item{
+		padding-bottom:25px;
+	}
+		
+	/*the title link and the more link for each rss entry*/
+	div.rssFeed div.item a{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		line-height:24px;
+	}
+		
+	/*the body for each rss entry*/
+	div.rssFeed div.description{
+		font-family:Verdana, Arial, sans-serif;
+		font-size: 13px;
+		line-height:24px;
+		color:#1c1c1c;
+	}
+	
+/*individual divs inside each rss feed*/
+div#ctl00_ctl22_SECNAVFeeds_updatePanelctl00_ctl22_SECNAVFeeds div{
+	padding:0;
+	margin:0;
+}
+
+div#ctl00_ctl22_NavyFeeds_updatePanelctl00_ctl22_NavyFeeds div{
+	padding:0;
+	margin:0;
+}
+
+div#ctl00_ctl22_USMCFeeds_updatePanelctl00_ctl22_USMCFeeds div{
+	padding:0;
+	margin:0;
+}
+
+div#ctl00_ctl22_DoDFeeds_updatePanelctl00_ctl22_DoDFeeds div{
+	padding:0;
+	margin:0;
+}
+
+/*div that wraps the links for the headers for the rss feeds section*/
+div#rssHeaderLinks{
+	padding-top:20px;
+	padding-bottom:20px;
+	border-bottom:solid 1px #c2c2c2;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+
+div#rssHeaderLinks span{
+	display:inline-block;
+	padding-left:24px;
+	padding-right:24px;
+	float:left;
+}
+
+	div#rssHeaderLinks span#secnav{
+		padding-left:0px;
+	}
+	
+	div#rssHeaderLinks span#dod{
+		padding-right:0px;
+	}
+
+
+/*links for each news feed*/
+div#rssHeaderLinks a{
+	font-size:18px;
+	line-height:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#024272;
+}
+
+	/*hover and selected state for the header links in the rss feeds section*/
+	div#rssHeaderLinks a.selected{
+		color:#AE2030;
+	}
+
+
+
+
+	div#rssHeaderLinks a:hover{
+		color:#AE2030;
+	}
+
+
+
+
+/*======================== END RSS FEEDS STYLES ========================*/
+
+
+
+
+
+
+/*======================== NEWS ARTICLE STYLES ========================*/
+/*Top image on news article pages*/
+div.customPublicNewsWrapper div.captioned-image{
+	width:auto;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	margin-top:25px;
+	margin-left:3px;
+}
+	/*sharepoint inserted div that wraps the image. removing the padding from it*/
+	div.customPublicNewsWrapper div.captioned-image div.ms-rtestate-field{
+		padding:0;
+		
+	}
+	
+	div.customPublicNewsWrapper div.captioned-image div.ms-rtestate-field img{
+		border:solid 1px #fff!important;
+		box-shadow: 0px 0px 3px 1px;
+		margin-bottom:5px;
+}
+
+div.customPublicNewsWrapper .article-header{
+	overflow:hidden;
+}
+
+/*created date for a news article*/
+div.customPublicNewsWrapper .article-header .date-line{
+	font-family:Verdana, Arial, sans-serif;
+	font-weight:normal;
+	font-size:13px;
+	color:#1c1c1c;
+	line-height:18px;
+	padding-bottom:15px;
+	width:100%;
+	border-bottom:solid 1px #ccc;
+}
+	
+	div.customPublicNewsWrapper .article-header .full-date{
+		width:100%;
+	}
+
+div.customPublicNewsWrapper .article-content{
+	
+}
+
+/*caption for the images in articles*/
+div.customPublicNewsWrapper div.caption span{
+	font-size:11px;
+	line-height:13px;
+	color:#8e8e8e;
+}
+
+/*add the underline from body-only web pages, also add padding to the top*/
+div.full-article-title{
+	border-bottom:solid 1px #ae2030;
+	padding-top:15px;
+}
+
+/*remove the padding from article content*/
+div.welcome{
+	padding:0!important;
+}
+
+div.article{
+	padding:0!important;
+}
+
+/*sharepoint inserted list item that surrounds items in content query web parts*/
+li.dfwp-item{
+	padding:0;
+	overflow:hidden;
+}
+
+/*custom div that surrounds news rollup items*/
+div.CampaignItem{
+	padding:0;
+	padding-top:20px;
+	padding-bottom:10px;
+	display:inline-block;
+}
+
+div.newsRollupItem{
+	padding:0;
+	padding-top:20px;
+	display:inline-block;
+}
+
+div.CampaignItem{
+	border-bottom:solid 1px #C2c2c2;
+}
+
+/*div that contains the link title for the news rollups*/
+div.newsRollupTitleDiv{
+	padding-bottom:7px;
+}
+
+h2.blue{
+	font-family:Arial;
+	font-size:24px!important;
+	color:#024272;
+	line-height:24px;
+}
+
+h2.blue16{
+	font-family:Arial;
+	font-size:16px!important;
+	color:#024272;
+	line-height:16px;
+}
+
+h2.redH2{
+	color: #AE2030;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 24px;
+    padding: 35px 0 0;
+}
+
+span.newsRollupTitle{
+	font-family:Arial;
+	font-size:24px!important;
+	color:#024272;
+	line-height:24px;
+}
+
+/*title of the article on the homepage*/
+div.newsRollupTitleDiv a.newsRollupTitle{
+	font-family:Arial;
+	font-size:22px!important;
+	color:#024272;
+	line-height:28px;
+}
+
+/*div that surrounds the images for news article images in the news rollups*/
+div.CampaignImage{
+	padding:0;
+	margin-right:20px;
+	margin-bottom:0px;
+	margin-top:8px;
+}
+
+div.newsRollupImage{
+	padding:0;
+	margin-right:20px;
+	margin-bottom:0px;
+	margin-top:8px;
+}
+
+div.newsRollupDescription{
+	padding:0;
+}
+
+/*link around news article images in the news rollups*/
+div.newsRollupImage a{
+	display:inline-block;
+}
+
+/*the news article image for news rollups*/
+div.newsRollupImage img{
+	width:auto;
+	height:auto;
+	max-width:290px;
+	max-height:190px;
+}
+
+/*======================== END NEWS ARTICLE STYLES ========================*/
+
+
+/*====================================STYLES FOR THE WARNING ALERT DISPLAYED FOR EXTERIOR LINKS===================*/
+div.warningWrapper{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	z-index:999999;
+	display:none;
+	background-image:url('../images/warningBG.png');
+	background-repeat:repeat;
+}
+
+div.warningOuterContent{
+	margin:0 auto;
+	width:560px;
+	padding:10px;
+	background:#024272;
+	margin-top:150px;
+	border:solid 1px #fff;
+	box-shadow: 0px 0px 3px 1px;
+}
+
+div.warningInnerContent{
+	margin:0 auto;
+	width:auto;
+	padding:10px;
+	background:#fff;
+	overflow:hidden;
+	text-align:center;
+}
+	
+div.warningInnerContent h1{
+		color: #AE2030 !important;
+    	font-family: Arial,Helvetica,sans-serif !important;
+    	font-size: 24px !important;
+    	font-weight: normal !important;
+    	padding: 15px 0 0;
+    	text-align:center;
+    	border-bottom:solid 1px #AE2030;
+	}
+
+	div.warningInnerContent ul{
+		list-style:none;
+		width: auto;
+		overflow:hidden;
+		text-align:center;
+		margin:0 auto;
+		padding:0;
+		width:235px;
+	}
+	
+	div.warningInnerContent ul li{
+		width: auto;
+		display:inline;
+		float:left;
+		padding:0;
+		margin:10px;
+		text-align:center;
+}
+	
+	div.warningInnerContent a{
+		display:block;
+		padding:10px;
+		background:#024272;
+		color:#fff;
+		text-shadow: -1px -1px 1px #023962;
+		width: auto;
+		float:left;
+		text-align:center;
+}
+/*====================================END STYLES FOR THE WARNING ALERT DISPLAYED FOR EXTERIOR LINKS===================*/
+
+
+/*====================================STYLES FOR THE CONTACT WEBMASTER FORM===================*/
+
+a#contactWebmaster{
+	display:none;
+}
+
+div#contactIframeWrapper{
+	display:none;
+	width:600px;
+	position:absolute;
+	top:-450px;
+	z-index:99999;
+	margin:0 auto;
+	left:200px;
+}
+
+iframe#contactIframe{
+	width:600px;
+	height:600px;
+	border:0;
+	margin:0 auto;
+}
+
+div.contactOuterContent{
+	width:560px;
+	padding:10px;
+	background:#024272;
+	border:solid 1px #fff;
+	box-shadow: 0px 0px 3px 1px;
+	margin-left:3px;
+	margin-top:3px;
+}
+
+div.contactInnerContent{
+	margin:0 auto;
+	width:auto;
+	padding:10px;
+	background:#fff;
+	overflow:hidden;
+	text-align:left;
+	position:relative;
+}
+
+form#contactForm div.contactFields{
+	padding:5px 0;
+	overflow:hidden;
+}
+
+form#contactForm div.alertPopup{
+	position:absolute;
+	top:150px;
+	width:300px;
+	left:125px;
+	background:#fff;
+	border:solid 1px #024272;
+	box-shadow: 0px 0px 2px 1px #666;
+	padding:10px;
+	display:none;
+}
+	
+	form#contactForm div.alertPopup h2{
+	
+
+	color: #AE2030;
+    font-size: 16px;
+    font-weight: normal;
+}
+	
+	form#contactForm div.alertPopup a{
+		display:block;
+		padding:10px 20px;
+		background:#024272;
+		color:#fff;
+		text-shadow: -1px -1px 1px #023962;
+		width: auto;
+		float:left;
+		text-align:center;
+		border:0;
+		cursor:pointer;
+		margin-left:105px;
+		font-size:13px;
+		margin-top:35px;
+}
+
+form#contactForm .fieldIncorrect{
+	border:solid 1px #AE2030;
+}
+
+	
+form#contactForm h1{
+		color: #AE2030 !important;
+    	font-family: Arial,Helvetica,sans-serif !important;
+    	font-size: 24px !important;
+    	font-weight: normal !important;
+    	padding: 15px 0 0;
+    	text-align:center;
+    	border-bottom:solid 1px #AE2030;
+	}
+
+form#contactForm label{
+	color: #024272;
+    font-size: 16px;
+    font-weight: normal;
+    display:inline-block;
+}
+
+form#contactForm input{
+	width:400px;
+	float:right;
+	color: #3d3d3d;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    padding:3px;
+}
+
+form#contactForm .contactInput{
+	float:right;
+	color: #3d3d3d;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    padding:3px;
+}
+
+form#contactForm span.requiredFieldStar{
+	color:#AE2030;
+	font-size:10px;
+	display:inline-block;
+	vertical-align:text-top;
+
+}
+
+form#contactForm div#buttonWrapper{
+	padding:25px 0;
+	overflow:hidden;
+	width:225px;
+	margin:0 auto;
+}
+
+form#contactForm button{
+	display:block;
+		padding:10px 20px;
+		background:#024272;
+		color:#fff;
+		text-shadow: -1px -1px 1px #023962;
+		width: auto;
+		float:left;
+		text-align:center;
+		border:0;
+		cursor:pointer;
+		margin-left:15px;
+}
+
+form#contactForm .commentLabel{
+	vertical-align:top;
+}
+
+form#contactForm textarea{
+	width:400px;
+	height:200px;
+}
+/*====================================END STYLES FOR THE CONTACT WEBMASTER FORM===================*/
+
+
+
+
+
+
+/*wrapper div that contains the footer*/
+div#footerDiv {
+    background: none repeat scroll 0 0 #024272;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*div that centers the footer content on the page*/
+div#footerWrapper {
+    background: none repeat scroll 0 0 #024272;
+    margin: 0 auto;
+    overflow:visible;
+    padding: 25px 0;
+	padding-bottom:0;
+    width: 960px;
+    position:relative;
+}
+
+.ms-dialog div#footerWrapper{
+	display:none;
+}
+
+/*the header for each section in the footer*/
+div#footerDiv h5 {
+    border-bottom: 1px solid #023962;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 8px;
+    text-shadow: -1px -1px 1px #023962;
+}
+
+/*text and links inside the footer*/
+div#footerDiv p a {
+    border-top: 1px solid #165D93;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 18px;
+    padding-top: 8px;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #023962;
+}
+
+/*change the padding for paragraphs in the footer*/
+div#footerDiv div.footerBorderTop p {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    padding-bottom:15px;
+    text-align: left;
+}
+
+div#footerDiv div.footerBorderTop{
+	border-top: 1px solid #165D93;
+}
+
+/*remove the padding and border of links in the footer*/
+div#footerDiv p a {
+    border: 0 none;
+    padding-top: 0;
+}
+
+/*hover state for links in the footer*/
+div#footerDiv p a:hover {
+    text-decoration: underline;
+}
+
+
+div#footerDiv p {
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 18px;
+    padding-top: 8px;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #023962;
+    text-align:center;
+}
+
+
+/*UL style in the footer*/
+div#footerDiv ul {
+    border-top: 1px solid #165D93;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 0 0;
+}
+
+/*list item style for the footer ULs*/
+div#footerDiv ul li {
+    color: #FFFFFF;
+    font-size: 11px;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-shadow: -1px -1px 1px #023962;
+}
+
+/*remove the margin from the last list item in each list*/
+div#footerDiv ul li.last {
+    margin: 0;
+}
+
+/*links in the footer. im not sure why I added this.  Might have been to over-ride something that sharepoint was doing*/
+div#footerDiv ul li a {
+    color: #FFFFFF;
+    font-size: 11px;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #023962;
+}
+
+/*hover state for the links inside the footer*/
+div#footerDiv ul li a:hover {
+    text-decoration: underline;
+}
+
+/*the center list for the suicide prevention, etc*/
+div#footerDiv div#footerCenter ul {
+    padding-top: 8px;
+}
+div#footerDiv div#footerCenter ul li {
+    float: left;
+    margin-right: 11px;
+}
+div#footerDiv div#footerCenter ul li a {
+    display: block;
+}
+div#footerDiv div#footerCenter ul li.last {
+    float: left;
+    margin-right: 0;
+}
+
+/*safe harbor image. not used.*/
+div#footerDiv ul li a#sHarbor {
+    background: url('../images/publicCustomImages/safeHarborSmall.jpg') no-repeat left top;
+    height: 99px;
+    width: 164px;
+    text-indent: -9999px;
+}
+
+
+
+/*safe harbor image. not used.*/
+div#footerDiv ul li a#sHelpLine {
+    background: url('../images/publicCustomImages/SHL-logo_Sml.jpg') no-repeat left top;
+    background-size: 164px 99px;
+    height: 99px;
+    width: 164px;
+    text-indent: -9999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*suicide prevention image*/
+div#footerDiv ul li a#sPrevention {
+    background: url("../images/publicCustomImages/suicidePreventionSmall.jpg") no-repeat left top;
+    height: 99px;
+    text-indent: -9999px;
+    width: 164px;
+}
+
+/*footer div that contains the Connect with us content width: 290px*/
+div#footerDiv div#footerLeft {
+    float: left;
+    width: 120px;
+}
+
+/*footer div that contains the image links content width: 340px resources*/
+div#footerDiv div#footerCenter {
+    float: left;
+    margin-right: 20px;
+    width: 560px;
+    margin-bottom:15px;
+}
+
+/*style for the image links*/
+div#footerDiv div#footerCenter a {
+    border: 0 none;
+    text-decoration: none;
+}
+
+/*footer div that contains the links content   (290 original)CONTACT US*/
+div#footerDiv div#footerRight {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+}
+
+/*list style for the links*/
+div#footerDiv div#footerRight ul {
+    float: left;
+    list-style: none outside none;
+    width: 145px;
+}
+
+/*remove margins from the list items in the links content*/
+div#footerDiv div#footerRight ul li {
+    margin-right: 0;
+}
+
+/*blogs section on the home page.  Images arent used*/
+div#navyBlog img {
+    width: 240px !important;
+}
+
+/*div that contains the Title of each blog post on the home page*/
+div.ItemTitle {
+    padding-top: 5px;
+}
+
+/*link for each title of blog posts*/
+div.ItemTitle a {
+}
+
+/*posted date of each blog post on the home page*/
+div.ItemDate {
+    color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}	
+/*hide webpart checkbox*/
+.ms-WPHeaderTdSelection {
+ 	display: none;
+}
+/* fix margins when dialog is up */
+/*div#sharePointMainContent {
+	margin-left:0 !important;
+	margin-right:0 !important;
+	min-height:0 !important;
+	min-width:0 !important;
+	width:auto !important;
+	height:auto !important;
+	background-color: white !important;
+	background-image: none !important;
+	padding: 0px !important;
+	overflow:inherit;
+}*/
+
+/*================= POPUP DIALOG STUFF ======================*/
+html.ms-dialog-nr body{
+	background:none;
+	width:100%;
+}
+
+html.ms-dialog body{
+	background:none;
+	width:100%;
+}
+
+html.ms-dialog-nr body #s4-ribbonrow{
+	width:100%;
+}
+
+html.ms-dialog body #s4-ribbonrow{
+	width:100%;
+}
+
+html.ms-dialog-nr body div#Ribbon{
+	width:100%;
+}
+
+html.ms-dialog body div#Ribbon{
+	width:100%;
+}
+
+html.ms-dialog-nr body div#s4-ribboncont{
+	width:100%;
+}
+
+html.ms-dialog body div#s4-ribboncont{
+	width:100%;
+}
+
+html.ms-dialog-nr div#footerDiv{
+	display:none;
+}
+
+html.ms-dialog div#footerDiv{
+	display:none;
+}
+
+html.ms-dialog-nr div#sharePointMainContent{
+	overflow:hidden;
+}
+
+html.ms-dialog div#sharePointMainContent{
+	overflow:hidden;
+}
+
+html.ms-dialog-nr div#wrapperDiv{
+	width:auto;
+	overflow:auto;
+}
+
+html.ms-dialog div#wrapperDiv{
+	width:auto;
+	overflow:auto;
+}
+
+html.ms-dialog-nr div#bodyDiv{
+	padding:0;
+}
+
+html.ms-dialog div#bodyDiv{
+	padding:0;
+}
+html.ms-dialog-nr span#ctl00_ContentMap{
+	display:none;
+}
+
+html.ms-dialog span#ctl00_ContentMap{
+	display:none;
+}
+
+html.ms-dialog div.ms-cui-tabContainer{
+	position:relative;
+	top:auto;
+}
+
+div.ms-dlgContent iframe[style]{
+	width:960px!important;
+}
+
+div.ms-dlgContent iframe{
+	width:960px!important;
+}
+
+div.ms-dlgTitle[style]{
+	width:960px!important;
+}
+
+div.ms-dlgTitle{
+	width:960px!important;
+}
+
+div.ms-dlgBorder[style]{
+	width:960px!important;
+}
+
+div.ms-dlgBorder{
+	width:960px!important;
+}
+
+div.ms-dlgContent[style]{
+	width:960px!important;
+}
+
+div.ms-dlgContent{
+	width:960px!important;
+}
+
+html.ms-dialog-nr td.ms-descriptiontext{
+	padding:0;
+}
+
+html.ms-dialog td.ms-descriptiontext{
+	padding:0;
+}
+
+/*div that contains the main content in the dialog popups*/
+div.ms-dlgFrameContainer{
+	margin:0 auto;
+}
+
+
+/* =====================  SLIDER STYLES FOR THE HOME PAGE OF THE SECNAV SITE =====================  */
+
+div.sliderItem{
+	padding:0px;
+	overflow:hidden;
+	position:relative;
+
+}
+
+div.sliderItem div.sliderLinkDiv{
+	overflow:hidden;
+	padding-bottom:15px;
+	padding-top:18px;
+}
+
+div.sliderItem a.sliderNext{
+	position:absolute;
+	display:block;
+	height:100%;
+	line-height:450px;
+	width:40px;
+	color:#f5f5f5!important;
+	text-shadow: 1px -1px 0px #aeaeae!important;
+	font-size:72px!important;
+	top:0;
+	cursor:pointer;
+}
+	
+	div.sliderItem a.sliderPrevious{
+		position:absolute;
+		display:block;
+		height:100%;
+		line-height:450px;
+		width:40px;
+		color:#f5f5f5!important;
+		text-shadow: 1px -1px 0px #aeaeae!important;
+		font-size:72px!important;
+		top:0;
+		cursor:pointer;
+	}
+		
+		div.sliderItem a.sliderPrevious:hover, div.sliderItem a.sliderNext:hover{
+			color:#e8e8e8!important;
+		}
+	
+	div.sliderItem a.sliderPrevious{
+		left:0;
+		display:none;
+	}
+	
+	div.sliderItem a.sliderNext{
+		right:15px;
+		display:none;
+	}
+	
+	div.sliderItem a.sliderNext:hover{
+		text-decoration:none;
+}
+
+	div.sliderItem a.sliderPrevious:hover{
+		text-decoration:none;
+}
+
+div.sliderItem div.sliderLinkDiv{
+	padding-bottom:10px;
+	padding-top:15px;
+}
+div.sliderItem a.sliderLink{
+	color: #024272;
+    font-family: Arial;
+    font-size: 24px !important;
+    line-height: 24px;
+}
+
+div.sliderItem div.sliderImage{
+	padding:0px;
+	width:100%;
+	margin-bottom:10px;
+}
+	
+	div.sliderItem div.sliderImage a{
+		display:block;
+		text-align:center;
+		
+	}
+	
+	div.sliderItem div.sliderImage a img{
+		width:460px;
+		height:350px;
+		border:solid 1px #fff;
+		box-shadow: 0px 0px 2px 1px #3d3d3d;
+	}
+	
+div.sliderItem div.description{
+	color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom:0;
+}
+
+div.sliderArea{
+	position:relative;
+	height:610px;
+}
+
+div.sliderArea ul{
+	position:relative;
+	
+}
+
+div.sliderArea ul li{
+	display:none;
+	position:absolute;
+	top:0;
+}
+
+div.sliderArea ul li:first-child{
+	display: block;
+}
+
+
+/* ===================== STYLES FOR THE FACEBOOK STYLES ON THE SECNAV HOMEPAGE =====================  */
+
+div#facebookFeed .pam{
+	padding:0!important;
+}
+
+
+div#facebookFeed .uiBoxWhite{
+	border:0!important;
+}
+
+
+
+
+/* ===================== STYLES FOR THE SEARCH FUNCTIONALITY =====================  */
+div.srch-stats{
+	color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+	margin:0;
+}
+
+div.srch-Description2{
+	color: #1C1C1C;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    width:100%;
+    max-width:100%;
+}
+
+div.srch-results{
+	padding:0;
+	width:100%;
+	max-width:100%;
+}
+
+.srch-Title2 a:link, .srch-Title2 a:visited, .srch-Title2 a:hover{
+	color: #024272!important;
+    font-family: Verdana,Arial,sans-serif!important;
+    font-size: 13px!important;
+    text-decoration:none!important;
+}
+
+.srch-Title2 a:hover{
+	text-decoration:underline!important;
+}
+
+div.srch-Metadata2{
+	color:#666;
+	font-family: Verdana,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+div.srch-Page{
+	padding-left:0;
+	padding-top:25px;
+	margin-top:25px;
+	border-top:solid 1px #c2c2c2;
+}
+
+p.srch-Metadata1{
+	padding:0;
+	max-width:auto;
+	width:auto!important;
+}
+
+td.ms-sbtext{
+	color: #024272;
+    font-family: Arial;
+    font-size: 22px !important;
+    line-height: 22px;
+ 	font-weight:normal;
+}
+
+.srch-urllink {
+    display: none;
+    margin-right: 8px;
+}
+.addResources {
+	display:none;
+}
+/* style-my-tootltips CSS Document */
+#s-m-t-tooltip{
+	position:fixed; 
+	max-width:300px;  
+	padding:6px 8px 8px 8px; 
+	background:#222; 
+	z-index:100; 
+	display:inline-block; /*important*/
+	/*font*/
+	font-family:Verdana, Geneva, sans-serif; 
+	font-size:11px; 
+	line-height:16px;
+	color:#fff; 
+	/*css3 rounded corners*/
+	-moz-border-radius:5px; 
+	-khtml-border-radius:5px; 
+	-webkit-border-radius:5px; 
+	border-radius:5px;
+}
+

@@ -1,0 +1,22 @@
+	$(document).ready(function()
+	{
+		//Start    --Rewrites search button function
+		//seach function for the search button in the header
+		S3031AEBB_Submit = function(){
+		    var searchVal = $("#ctl00_PlaceHolderSearchArea_ctl01_S3031AEBB_InputKeywords").val();
+		    var urlStr = window.location.protocol + "//" + window.location.host + "/test/search/results.aspx?k="+searchVal+"&s=test";
+		    window.open(urlStr,"_self");
+		    return false;
+		}
+		
+		//search function for the search button on the search results page
+		S212DA122_Submit =  function(){
+		    var searchVal = $("#ctl00_ctl25_g_5c728935_ec48_4ad3_9c91_fe812b004f27_S212DA122_InputKeywords").val();
+		    var urlStr = window.location.protocol + "//" + window.location.host + "/test/search/results.aspx?k="+searchVal+"&s=test";
+		    window.open(urlStr,"_self");
+		    return false;
+		}
+		//End Rewrites search button function--
+		
+	});
+

@@ -1,0 +1,61 @@
+﻿/*
+* SPImageFieldUpload - Extends SharePoint's RichImageFieldControl using jQuery
+* Version 0.2
+* @requires jQuery v1.4.2 or greater - jQuery 1.7+ recommended
+*
+* Copyright (c) 2012 Arnault Nouvel
+* Examples and docs at:
+* https://spimagefieldupload.codeplex.com/
+* Licensed under the MIT license:
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+//Language dictionary. Add a translation here if needed
+var arUploadLinkText = {};
+arUploadLinkText[1036] = "Cliquez ici pour ajouter une image à partir de votre ordinateur.";
+arUploadLinkText[1033] = "Click here to insert a picture from your computer.";
+
+jQuery(document).ready(function () {
+
+    //For each RichImageFieldControl in the page (only in edit mode)
+    jQuery('a[id$="AddAssetPromptLink"]').each(function () {
+
+        var selectorId = jQuery(this).attr("SelectorID");
+
+        //Gets the translated text from the array
+        var lkText = arUploadLinkText[SP.Res.lcid] ? arUploadLinkText[SP.Res.lcid] : arUploadLinkText[1033] ;
+
+        //Adds a new link that allows to insert an image from the computer 
+        lkId = jQuery(this).attr("id") + "_FromComp";
+        jQuery(this).after('<br /><a href="#" class="ms-toolbar ms-selectorlink" target="_self" id="' + lkId + '" >' + lkText + '</a>');
+
+        $lk = jQuery("#" + lkId);
+        $lk.click(function () {
+            
+            //If the link is clicked, show the existing RteUploadDialog.aspx page as a popup
+            var dialog = {
+                url: SP.Utilities.Utility.getLayoutsPageUrl("RteUploadDialog.aspx") + "?LCID=" + SP.Res.lcid + "&Dialog=UploadImage&UseDivDialog=true&Source=" + encodeURIComponent(window.location),
+                allowMaximize: true,
+                showClose: true,
+                width: 500,
+                height: 160,
+                dialogReturnValueCallback: function (success, html) {
+                    if (success) {
+                        //Gets the picture's url from the popup, shows it and hides the links
+                        var $emptyPanel = jQuery("#" + selectorId + "_EmptyPanel");
+                        var $assetSelectedPanel = jQuery("#" + selectorId + "_AssetSelectedPanel");
+                        var $imageFieldDisplay = jQuery("#" + selectorId + "_ImageFieldDisplay");
+
+                        $imageFieldDisplay.html(html);
+                        $emptyPanel.css("display", "none");
+                        $assetSelectedPanel.css("display", "inline");
+                    }
+                }
+            };
+
+            thisDialog = SP.UI.ModalDialog.showModalDialog(dialog);
+
+        });
+
+    });
+});

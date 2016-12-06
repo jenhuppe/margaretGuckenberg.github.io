@@ -1,0 +1,146 @@
+	$(document).ready(function()
+	{		
+		//Remove metadata line from search results
+		$("div.srch-Metadata2").remove();
+		//End
+		
+		//Start    --Rewrites search button function
+		//S3031AEBB_Submit = function(){
+		//    var searchVal = $("#ctl00_PlaceHolderSearchArea_ctl01_S3031AEBB_InputKeywords").val();
+		//    var urlStr = window.location.protocol + "//" + window.location.host + "/test/search/results.aspx?k="+searchVal+"&s=test";
+		//    window.open(urlStr,"_self");
+		//    return false;
+		//}
+		//End Rewrites search button function--
+		
+		$('a[href^="http"]').each(function(){
+			if( $(this).attr('href').indexOf('test') < 0)
+				$(this).attr('title','Open "' + $(this).html() + '" in a New Window');
+		});
+		
+		$('a[href^="http"]').click(function(){
+			if( $(this).attr('href').indexOf('test') < 0)
+				{
+					$(this).attr('target','_blank');
+				}
+		});
+		
+		//when the window scrolls, if it isn't a the, add a drop shadow to the ribbon
+		 $(window).scroll(function() {
+		 	
+   			if($(window).scrollTop()  > 140)
+   			{
+      	 		$('div#s4-ribbonrow').addClass('bottomDropShadow bottomWhiteBorder');
+      	 		}
+   				else
+   					$('div#s4-ribbonrow').removeClass('bottomDropShadow bottomWhiteBorder');
+		});
+		
+		var pathJquery = window.location.host;
+		if (pathJquery == "www.secnav.navy.mil") {
+		    $("div.s4-pr.s4-ribbonrowhidetitle").hide();
+		    $("ul.ms-cui-tts").remove();
+			$("<style type='text/css' >#leftNav{display:none!important;} #RibbonContainer-TabRowLeft{display:none!important;} ul.ms-cui-tts{display:none!important;} div.ms-cui-tabContainer{display:none!important;} table.ms-formtoolbar{display:none!important;}</style>").appendTo("head");
+			//remove clickable links from web part titles
+			$("h3.ms-standardheader.ms-WPTitle").children().attr("href","").attr("onclick","return false");
+			//remove the hover pointer from titles with links in them
+			$(".ms-WPTitle").css('cursor','default');
+		}
+				
+		$('div#navigationDiv ul li ul li:nth-child(5) a').css('padding-right','20px');
+		$('div#navigationDiv ul li ul li:nth-child(7) a').css('padding-right','20px');
+		
+		var today = new Date();
+		$('div.date p').html(today.toLocaleDateString()); 
+		
+		//create global variable to store link of clicked on url
+		var hyperlink;
+		//create exceptions string
+		var exceptionLinks = "[href*='usna.edu'],\
+                              [href*='usnwc.edu'],\
+                              [href*='nps.edu'],\
+                              [href*='navy.com'],\
+                              [href*='marines.com'],\
+                              [href*='nex.com'],\
+                              [href*='mccs.com']";
+		//when the user clicks on a url that doesnt contain .mil or .gov
+		$("a:not([href*='.mil'],[href*='.gov']," + exceptionLinks + ")").click(function (e) { 
+			//check to see if this is not a relative link within the site
+			if($(this).attr('href').indexOf('http') > -1)
+			{
+				//stop the default action, which is open the url
+				e.preventDefault();
+				//store the href attribute in to the hyperlink variable
+				hyperlink = $(this).attr('href');
+				
+				//show the warning that the link isnt endorsed, and run a callback function after it's shown
+				$('div.warningWrapper').show(0,function(){
+					//when the user clicks on the continue button, open the hyperlink of the previously clicked on URL in a new window, and hide the warning
+					$('a.agreeLink').click(function(){
+						window.open(hyperlink);
+						$('div.warningWrapper').hide();
+						
+						//break out of the function
+						stopPropagation();
+					});
+					
+					$('a.disagreeLink').click(function(){
+						$('div.warningWrapper').hide();
+					});
+				});
+			
+			}//end if statement
+		});
+		
+		$('a#contactWebmaster').click(function(){
+			$('div#contactIframeWrapper').fadeIn('fast');
+		});
+		
+		$('iframe#contactIframe').load(function(){
+			$('iframe#contactIframe').contents().find('button#cancelContact').click(function(e){
+				e.preventDefault();
+				$('div#contactIframeWrapper').hide();
+			});
+		});
+
+        //Over-write the datasheet view to display all datasheet views in an SP dialog window.
+        //check to see if the url has the datasheet view "ShowInGrid"
+        if ((window.location.href.indexOf('ShowInGrid=True') > -1) && (!($('html').hasClass('ms-dialog')))) {
+            //run user defined open dialog window function with the URL as a parameter
+            OpenDialog(window.location.href);
+        }
+
+        //User Defined Function to Open Dialog Framework
+        function OpenDialog(strPageURL) {
+            var timeOut = setTimeout(function () {
+                var windowHeight = $(window).height();
+                windowHeight = windowHeight - 200;
+                var windowWidth = $(window).width();
+
+                var dialogOptions = SP.UI.$create_DialogOptions();
+                dialogOptions.url = strPageURL; // URL of the Page
+                dialogOptions.width = windowWidth; // Width of the Dialog
+                dialogOptions.height = windowHeight; // Height of the Dialog
+                dialogOptions.dialogReturnValueCallback = Function.createDelegate(null, CloseCallback); // Function to capture dialog closed event
+                SP.UI.ModalDialog.showModalDialog(dialogOptions); // Open the Dialog
+                return false;
+
+            }, 500); //wait 500ms before running the function
+            return false;
+        }
+
+        // Dialog close event capture function
+        function CloseCallback(strReturnValue, target) {
+            if (strReturnValue === SP.UI.DialogResult.OK) // Perform action on Ok.
+            {
+                //alert("User clicked Ok");
+            }
+            if (strReturnValue === SP.UI.DialogResult.cancel) // Perform action on Cancel.
+            {
+                var sView = setTimeout(function () {
+                    window.top.location = window.location.pathname; //return the view to the all items view, to prevent viewing the list in datasheet view outside of a dialog
+                }, 200);
+            }
+        }
+				
+	});

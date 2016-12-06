@@ -1,0 +1,9 @@
+﻿/*Use example OpenDialog("/donaa/PublishingImages/DON-HQ-Org-Chart.jpg",1200,800);*/
+
+function OpenDialog(pageURL,pageWidth,pageHeight) {
+        var NewPopUp = SP.UI.$create_DialogOptions();
+        NewPopUp.url = pageURL;
+        NewPopUp.width = pageWidth;
+        NewPopUp.height = pageHeight;
+        SP.UI.ModalDialog.showModalDialog(NewPopUp);  
+    }
