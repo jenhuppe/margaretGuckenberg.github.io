@@ -1,0 +1,307 @@
+/*  Header and Footer Styles */
+/*  Update: 05232014  */
+
+/*
+   // ===================================== \\
+
+		////////////// Main Header //////////////
+	
+   \\ ===================================== //
+*/
+
+#container {background: #fff; width: 1003px; margin-right: auto; margin-left: auto; border-right: 1px solid #999; border-left: 1px solid #999; }
+#page-header {
+	height: 86px;
+	background: #002e56;
+}
+
+/* Americas Navy Logo */
+
+.gffg {
+	display: block;
+	height: 78px;
+	width: 265px;
+	outline: none;
+	background-image: url("/imgs/svg/sprites.png");
+	background-image: url("/imgs/svg/sprites.svg"), none;
+	background-position: -338px 3px;
+	background-repeat:no-repeat;	
+	cursor: pointer;
+	/*text-indent: -9000px;*/
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.aho {
+	display: none;
+	height: 78px;
+	width: 260px;
+	outline: none;
+	background: transparent url("/imgs/americas-navy-globe.png") no-repeat 0 0;
+	cursor: pointer;
+	text-indent: -9000px;
+}
+
+#logo {float:left; margin: 0 0 0 25px; }
+
+#navy-seal-header {
+	float: left; 
+	margin: 7px 0 0 160px;
+	width: 100px;
+	height: 70px;
+}
+
+#navy-seal-header a {
+	background-image: url("/imgs/svg/sprites.png");
+	background-image: url("/imgs/svg/sprites.svg"), none;
+	background-position: -258px -197px;
+	background-repeat:no-repeat;	
+	display: block;
+	width: 100px;
+	height: 100px;
+	font-size: 1em;
+	text-indent: -2000px;
+	overflow: hidden;
+}
+
+/*Subscribe Search Underway*/
+#header-links {float: right; margin: 5px 20px 0 0; width: 280px; }
+#header-links a {font-family: Verdana, Helvetica, Arial, sans-serif; color: #e8e8e8; font-size: .90em; margin: 10px 25px 0 0; }
+#header-links a.adv {color: #999; }
+#header-links a:hover {color: #999; }
+#header-links a.adv:hover {text-decoration: underline; color: #999; }
+#hdr-links {text-align: right; }
+a.mail-update {
+	background: url('/imgs/envelope.png') no-repeat center left;
+	width: 32px;
+	height: 32px;
+	padding-left: 25px;
+}
+#main-search {width:276px; /*background-color: #00072a;*/ padding: 5px; margin: 2px 0 2px 0; }
+#main-search input[type=search], #main-search input[type=text] {width: 232px; -webkit-appearance: textfield; }
+#submit-btn {
+	background-image: url("/imgs/svg/sprites.png");
+	background-image: url("/imgs/svg/sprites.svg"), none;
+	background-position: -174px -5px;
+	background-repeat:no-repeat;
+	background-color: transparent;
+	height: 21px;
+	width: 21px;
+	text-indent: -9999px;
+	cursor: pointer;
+	border: none; 
+}
+
+#usnsocial {
+	height: 20px;
+	margin: 3px 0 0 0;
+}
+
+#usnsocial ul {
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+
+#usnsocial ul li {
+	float: left;
+	width: 21px;
+	height: 20px;
+	padding: 0;
+	margin-right: 18px;
+}
+
+#usnsocial ul li a {
+	display: block;
+	width: 21px;
+	height: 20px;
+	margin: 0;
+	text-decoration: none;
+	/*text-indent: -9999px;*/
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-image: url("/imgs/svg/sprites.png");
+	background-image: url("/imgs/svg/sprites.svg"), none;
+}
+
+#usnsocial .usn_facebook {
+	background-position: 5px -178px;
+}
+
+#usnsocial .usn_googleplus {
+	background-position: -52px -178px;
+}
+
+#usnsocial .usn_twitter {
+	background-position: -24px -178px;
+}
+
+#usnsocial .usn_blog {
+	background-position: -134px -178px;
+}
+
+#usnsocial .usn_youtube {
+	background-position: -160px -178px;
+}
+
+#usnsocial .usn_flickr {
+	background-position: -81px -178px;
+}
+
+#usnsocial .usn_pinterest {
+	background-position: -110px -178px;
+}
+
+#usnsocial .usn_instagram {
+	background-position: -190px -178px;
+}
+
+#usnsocial .usn_facebook:hover {
+	background-position: 5px -130px;
+}
+
+#usnsocial .usn_googleplus:hover {
+	background-position: -52px -130px;
+}
+
+#usnsocial .usn_twitter:hover {
+	background-position: -24px -130px;
+}
+
+#usnsocial .usn_blog:hover {
+	background-position: -134px -130px;
+}
+
+#usnsocial .usn_youtube:hover {
+	background-position: -160px -130px;
+}
+
+#usnsocial .usn_flickr:hover {
+	background-position: -81px -130px;
+}
+
+#usnsocial .usn_pinterest:hover {
+	background-position: -110px -130px;
+}
+
+#usnsocial .usn_instagram:hover {
+	background-position: -190px -130px;
+}
+
+/*
+   // ===================================== \\
+
+		////////////// Navigation //////////////
+
+   \\ ===================================== //
+*/
+
+/*==================================================
+ * Navigation Bar Drop Shadow
+ * ===============================================*/
+
+.effect6
+{
+	position:relative;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#menu {
+	background: #ccc;
+	font-family: 'OswaldRegular', Tahoma, sans-serif;
+	list-style: none;
+	/* width: 99%; */
+	margin:0 auto;
+	height: 26px;
+	padding: 0px 0 0 1%; z-index:8;
+}
+
+/*#menu {font-family: 'OswaldRegular', Tahoma, sans-serif; list-style: none; width: 983px; margin: 0 auto;height: 25px; padding: 0 10px 0 10px; border-bottom: #666 2px solid; z-index: 8; } Rule before Wanda changed the nav bar width to fix contact us wrap*/
+#menu li {float: left; display: block; text-align: center; position: relative; padding: auto 10px; margin-right: 1.9em; margin-top: auto; border: none; z-index:10; }
+#menu li#nav-news {margin-left: 22px; }
+#menu li#nav-media {margin-left: 57px; }
+#menu li#nav-links {margin-right: 20px; }
+#menu li#nav-contact {margin-right: 0; }
+#menu li:hover { background-color:#002e56;;}
+#menu li a {font-family: 'OswaldRegular', "Arial Narrow Bold", "Arial Narrow", Haettenschweiler, Helvetica, Arial, sans-serif; color: #002e56; font-size: 1.3em; display: block; outline: 0; text-decoration: none; text-transform: uppercase; margin: 2px 15px 0 15px; }
+/* #menu li a {font-family: 'OswaldRegular', Tahoma, Arial, sans-serif; color: #002e56; font-size: 1.3em; display: block; outline: 0; text-decoration: none; text-transform: uppercase; margin: 0px 15px;} Rule before NMCI font fix */
+#menu li:hover a {color: #FFF; }
+
+/*column widths*/
+.dropdown_1column, .dropdown_2columns, .dropdown_3columns, .dropdown_4columns, .dropdown_5columns {margin: 0 auto; position: absolute; left: -999em; text-align: left; padding: 10px 5px; background: transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF,endColorstr=#FFFFFFFF); zoom: 1; /* The Fallback */ background-color: rgba(255,255,255, .95); border: #666 solid 2px; border-top: none; z-index: 100; -webkit-box-shadow: 0 3px 5px 2px #000000; -moz-box-shadow: 0 3px 5px 2px #000000; box-shadow: 0 3px 5px 2px #000000; behavior: url(/css/PIE/PIE.htc); }
+/* .dropdown_1column, .dropdown_2columns, .dropdown_3columns, .dropdown_4columns, .dropdown_5columns {margin: 0 auto; position: absolute; left: -999em; text-align: left; padding: 10px 5px; background-color: #ffffff; background-color: rgba(255,255,255, .95);border: #666 solid 2px; border-top: none; z-index:100; -webkit-box-shadow: 0 3px 5px 2px ; -moz-box-shadow: 0 3px 5px 2px; box-shadow: 0 3px 5px 2px; } Before Wanda added CSS PIE fix for dropdown background color */
+.dropdown_1column {width: 220px; }
+.dropdown_2columns {width: 440px; }
+.dropdown_3columns {width: 660px; }
+.dropdown_4columns {width: 880px; }
+
+#menu li:hover .dropdown_1column, #menu li:hover .dropdown_2columns, #menu li:hover .dropdown_3columns, #menu li:hover .dropdown_4columns,#menu li:hover .dropdown_5columns {left: -1px; top:auto; }
+#menu ul li a {font-family: Arial, Helvetica, sans-serif; font-size: 1.1em; color: #666; text-transform: capitalize; text-align: left; line-height: 1.2; margin-bottom: 7px; }
+#menu ul li a:hover {color: #666; }
+#menu ul li:hover {background: transparent; }
+#menu ul li:hover a {color: #666; }
+#menu li .dropdown_1column ul li a, #menu li .dropdown_3columns div ul li a, #menu li .dropdown_2columns div ul li a {color: #666; }
+#menu li .dropdown_1column ul li a:hover, #menu li .dropdown_3columns div ul li a:hover, #menu li .dropdown_2columns div ul li a:hover {color: #002e56; }
+
+/*
+   // ===================================== \\
+
+		/////////// Drop Down Override ///////////
+
+   \\ ===================================== //
+*/
+
+#menu li:hover div.dropdown_five_three_column,  #menu li:hover div.dropdown_six_two_column {left:-241px; }
+#menu li:hover div.dropdown_seven_one_column, #menu li:hover div.dropdown_eight_one_column {left:-141px; }
+#menu li:hover div.dropdown_six_three_column, #menu li:hover div.dropdown_seven_two_column {left:-361px; }
+#menu li:hover div.dropdown_eight_two_column {left:-331px; }
+#menu li:hover div.dropdown_seven_three_column {left:-581px; }
+#menu li:hover div.dropdown_eight_three_column {left:-551px; }
+
+.col_1, .col_2, .col_4, .col_5 {display: inline; float: left; position: relative; margin-left: 5px; margin-right: 5px; }
+
+.col_1 {width: 210px; }
+.col_2 {width: 430px; }
+.col_3 {width: 700px; }
+.col_4 {width: 870px; }
+
+/*
+   // ===================================== \\
+
+		//////////////// Footer ////////////////
+
+   \\ ===================================== //
+*/
+
+#footer-logo {background: url('/imgs/footer-logo.png') no-repeat; width: 69px; height:68px; margin: 0 auto; }
+footer.page-footer {
+	clear: both;
+	background: #F7F7F7 url('/imgs/footer-bar.gif') repeat-x;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footer-nav{margin: 40px auto; /*width:100%;*/ padding-left: 30px;color:rgb(0, 51, 102) }
+/*#footer-nav{margin: 40px auto; width:963; padding-left: 30px;color:rgb(0, 51, 102)}*/
+#footer-nav ul{list-style-type: none;}
+#footer-nav ul li {display: inline; float:left; margin:0;width:100px; padding-right:20px; }
+#footer-nav ul li ul {display: block; margin-bottom:5em; }
+#footer-nav ul li ul li {display:list-item; margin-left: 0; margin-right: 0; padding-right: 0; margin-bottom: 5px; line-height:1; }
+#footer-nav ul li ul li a {font: .75em Verdana, Helvetica, Arial, sans-serif; }
+/*#disclaimer {list-style-type: none;}
+#disclaimer li {display: inline; float: left; padding: 0px 7px; border-right: 1px solid #666;}*/
+.disclaimer {padding-top: 25px; text-align: right; }
+
+.footer-seal {
+	background: url('/imgs/navy-seal-footer.png') no-repeat center left;
+	height: 46px;
+	text-indent: 50px;
+	padding-top: 25px;
+	}
+
+.footer-seal p {vertical-align: middle;}
