@@ -1,0 +1,81 @@
+/**
+ * @author Navy Web
+ */
+
+var currSlide = 1;
+var totalSlides = 4;
+var autoPlay = true;
+var timepassed = 0;
+var duration = 9;
+
+
+function autoRun (){
+
+		if (window.timepassed == window.duration){
+			window.timepassed = 0;
+			if (window.currSlide == window.totalSlides){
+			  currSlide = 0;
+			}
+			if (autoPlay == true){
+				$('#sliderNav .navTitle:nth-child('+(window.currSlide+1)+')').trigger('click');
+				
+			}
+		}else{
+		 window.timepassed += 1;
+		}
+		
+
+}
+
+
+
+
+$(document).ready(function(evt){
+	    if (isMobile == true) {
+		  $('.banVid').remove();
+		  $('.fallback').show();
+		}; 
+		
+		$('#sliderNav').find('a').click(function(e){
+    			    e.stopPropagation();
+			   });
+
+		setInterval(autoRun, 1000);
+		$('.navContent').hide();
+		$('#sliderNav .navTitle').eq(0).addClass('selected');
+		$('#multiSlides .slide').eq(0).show().addClass('active');
+	
+		$('.navContent').eq(0).slideDown(50).addClass('open');
+
+		$('.navTitle').click(function(){
+		
+		       var iconClicked = $(this).index();
+		       window.currSlide = iconClicked + 1;
+		      
+		
+			if ($(this).hasClass('selected')) {return false;
+			} else {
+				 window.timepassed = 0;
+				$('.selected').removeClass('selected');
+				$(this).addClass('selected');
+				$('.active').removeClass('active').hide();
+				
+				$('#multiSlides .slide').eq(iconClicked).show().addClass('active');
+				$('.open').slideUp(400).removeClass('open');
+				$('.navContent').eq(iconClicked).addClass('open').slideDown(400);
+				
+			   };
+
+			  
+
+		});
+
+		$("#sliderContainer").hover(
+
+        	function () { autoPlay = false; },
+        	function () { autoPlay = true;
+        			timepassed = 0; 
+
+        	});
+
+});
