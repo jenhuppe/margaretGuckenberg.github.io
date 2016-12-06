@@ -1,0 +1,213 @@
+/**
+ * by - David Cothran, Robb Gensic, Tzu Wei Navy Web
+ */
+
+
+//global variables used in multiple functions
+var currpSlide = 1;
+var totalpSlides = 4;
+var autoSlide = true;
+var timeelapsed = 0;
+var pduration = 6; 
+var slideheight = 300;
+//if  slidewidth is changed, you must also change the animation width in the click function in the document ready area.
+var slidewidth = 430;
+
+//auto runs the slideshow at whatever duration is set in globals if autoSlide is set to true.
+function autoPhoto (){
+
+		
+
+		if (window.timeelapsed == window.pduration){
+			window.timeelapsed = 0;
+
+			if (window.currpSlide == window.totalpSlides){
+			  currpSlide = 0;
+			}
+			if (autoSlide == true){
+				advanceImage();
+				
+			}
+		}else{
+		 window.timeelapsed += 1;
+		}
+
+		
+		
+
+}
+
+function advanceImage (){
+				window.currpSlide = window.currpSlide + 1;
+				$('.pactive').animate({opacity:0.0},200, "linear", function(){
+					$('.pactive').css("width" , "0px").removeClass('pactive');
+					$('#multiPhotos .pslide:nth-child('+(window.currpSlide)+')').addClass('pactive'); changeSize();
+				$('#multiPhotos .pslide:nth-child('+(window.currpSlide )+')').css("width" , "430px").animate({opacity:1},300, "linear");setcaption();
+				setmeta();	
+				
+				});	
+			 
+}
+
+function prevImage (){
+			window.currpSlide = window.currpSlide - 1;
+			$('.pactive').animate({opacity:0.0},200, "linear", function(){
+					$('.pactive').css("width" , "0px").removeClass('pactive');
+					$('#multiPhotos .pslide:nth-child('+(window.currpSlide)+')').addClass('pactive'); changeSize();
+				$('#multiPhotos .pslide:nth-child('+(window.currpSlide)+')').css("width" , "430px").animate({opacity:1},300, "linear");setcaption();
+				setmeta();	
+				
+				});	
+			
+}
+//figures shape of photos and changes size to fit box
+function changeSize (){
+
+
+					if ($('.pactive IMG').height() > $('.pactive IMG').width() ) {
+						var curimage = $('.pactive IMG');
+						var imgy = $('.pactive IMG').height();
+						var imgx = $('.pactive IMG').width();
+						var vratio = window.slideheight / imgy;
+						var newheight = imgy * vratio;
+						var newwidth = imgx * vratio;
+						$('.pactive IMG').height(newheight);  
+						$('.pactive IMG').width(newwidth);
+						centerImages();
+						
+					}
+
+					if ($('.pactive IMG').width() > $('.pactive IMG').height() ) {
+						var curimage = $('.pactive IMG');
+						var imgy = $('.pactive IMG').height();
+						var imgx = $('.pactive IMG').width();
+						var hratio = window.slidewidth / imgx;
+						var newheight = imgy * hratio;
+						var newwidth = imgx * hratio;
+						$('.pactive IMG').height(newheight);  
+						$('.pactive IMG').width(newwidth);
+						centerImages();
+					}
+}
+
+//centers the images in the box following the resize
+function centerImages(){
+						var curimage = $('.pactive IMG');
+	                    var imgy = curimage.height();
+						var imgx = curimage.width();
+						myDifx = (window.slidewidth - imgx)/2;
+						myDify = (window.slideheight - imgy)/2;
+						
+
+						curimage.css("margin-top" , myDify + "px");
+						curimage.css("margin-left" , myDifx + "px");
+						$('.pactive p').css("margin-top" , myDify + "px")
+
+
+						return ;
+}
+// sets the caption to the alt text from the active image. 
+function setcaption(){
+						var imgsrc =$(".pactive IMG").attr('src');
+						var captext = $(".pactive IMG").attr('alt');
+						var photoID = $(".pactive IMG").attr('data-id');
+						var atURL = 'http://www.navy.mil/view_image.asp?id=' + photoID;
+						var fbShare ="https://www.facebook.com/sharer/sharer.php?u=" + atURL + "&t=Navy%20Photograph";
+						var twitterShare ="https://twitter.com/intent/tweet?source=" + atURL + "&text=Navy%20Photograph:" +atURL;
+						var emailShare = "mailto:?subject=&body=:%20" +atURL;
+						var pinterestShare = "http://pinterest.com/pin/create/button/?url=" + atURL + "&media=http://www.navy.mil" + imgsrc + "&description=Navy%20Photography";
+						$('.fbShare').attr('href',fbShare);
+						$('.twShare').attr('href',twitterShare);
+						$('.mailIt').attr('href',emailShare);
+						$('.pinShare').attr('href',pinterestShare);
+ 						$('.pcaption p').text(captext);
+ 						$('.viewHRes').attr('href' , '/management/photodb/photos/' + imgsrc.substr(33)).attr('target' , '_blank').text("View High Res");
+ 						return;
+
+}
+
+// sets the caption to the alt text from the active image. 
+function setmeta(){
+						var metadata =$(".pactive IMG").attr('data');
+						
+ 						$('.plocation p').css('display', 'none').text(metadata).fadeIn(600);
+ 						return;
+
+}
+
+
+$(document).ready(function(evt){
+		
+		setInterval(autoPhoto, 1000);
+		$('.pcaption').slideUp();
+		$('.hidecap').hide();
+		//$('#photoNav .navElement').eq(0).addClass('pselected');
+
+		$('#multiPhotos .pslide').eq(0).css('width' , '430px').css('opacity' , 1 ).addClass('pactive');
+		$('#multiPhotos .pslide').eq(0).imagesLoaded(function(){
+			changeSize();
+			setcaption();
+			setmeta();
+		});	
+		
+		$('.ImgNext').click(function(){
+			//console.log('NEXT the currpslide on click is ' + window.currpSlide);
+			if (window.currpSlide == window.totalpSlides){
+			  window.currpSlide = 0;
+			 // console.log('reset to 0');
+			}
+
+			advanceImage();
+		});
+
+		$('.ImgPrev').click(function(){
+			//console.log('PREV the currpslide on click is ' + window.currpSlide);
+			if (window.currpSlide == 1){
+				window.currpSlide = window.totalpSlides + 1
+				 //console.log('reset to 5');
+				}
+			prevImage();
+		});
+
+		
+
+//stops the slideshow on hover of the sliderContainer and restarts it on hover off. 
+		$("#photoContainer").hover(
+
+        	function () { autoSlide = false; },
+        	function () { autoSlide = true;
+        			timeelapsed = 0; 
+
+        	});
+// opens and closes the caption and toggles the show or hide piece. 
+		$('.captoggle span').click(function(){
+			
+			$('.pcaption').slideToggle(200);
+ 			$('.hidecap').toggle(1);
+ 			$('.viewcap').toggle(1);
+ 			
+
+
+
+		});
+
+		$('.pslide').hammer().on("swiperight", function(){
+			if (window.currpSlide == 1){
+				window.currpSlide = window.totalpSlides + 1
+				}
+			prevImage();
+		});
+
+    $('.pslide').hammer().on("swipeleft", function(){
+			if (window.currpSlide == window.totalpSlides){
+			  window.currpSlide = 0;
+			}
+			advanceImage();
+		});
+
+});
+
+
+
+
+//end of document
