@@ -1,0 +1,19 @@
+﻿/* homepage styles */
+
+/* column layout */
+td#columnCapLeft, td#masterColumnLeft, td#columnFooterLeft, #printPage { display: none; }
+td#columnCapRight, td#masterColumnRight, td#columnFooterRight { width: 100%; }
+td#masterColumnRight { padding-left: 20px; }
+
+/* content layout */
+h1 { }
+h2#audienceHeader { margin-bottom: 0; }
+#audienceLayout { width: 100%; border-collapse: collapse; }
+#audienceLayout th { background: #4e6172; }
+#audienceLayout td { vertical-align: top; border: 1px solid #4e6172; border-collapse: collapse; }
+th#audienceLeft { width: 33%; vertical-align: top; border-right: 1px solid #fff !important; }
+th#audienceCenter { width: 34%; vertical-align: top; border-left: 1px solid #fff !important; border-right: 1px solid #fff !important; }
+th#audienceRight { width: 33%; vertical-align: top; border-left: 1px solid #fff !important; }
+div.audienceText { padding: 10px; }
+
+#audienceLayout h3 { margin: 0; padding: 5px; text-align: center; color: #fff; }
