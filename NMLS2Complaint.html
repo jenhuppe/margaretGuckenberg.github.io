@@ -582,7 +582,39 @@ var w = window.open(url, 'printFriendlyWindow', '');
 		</tbody></table>
 	</td></tr></tbody></table>
 	
-<iframe src="http://margaretguckenberg.github.io/NMLS2Complaint_files/embeddedNMLS.html" height="600" width="1000"></iframe>
+<!--  <iframe src="http://margaretguckenberg.github.io/NMLS2Complaint_files/embeddedNMLS.html" height="600" width="1000"></iframe> -->
+
+<html>
+   <head>
+      <script>
+         function render() {
+         var scriptFrame = document.createElement('iframe');
+         scriptFrame.id = "embedded-iframe";
+         scriptFrame.src = 'javascript:""';
+         scriptFrame.style.width = "100%";
+         scriptFrame.style.height = "750px";
+         content.appendChild(scriptFrame);
+         
+         frameDoc = scriptFrame.contentDocument;
+         if (!frameDoc) {
+         frameDoc = scriptFrame.contentWindow.document;
+         }
+         
+         var html = '<html>\n<head></head>\n<body style="height: 725px;">\n<script src="https://pwc-nmls.appiancloud.com/suite/tempo/tempo.nocache.js"' + '></scrip' + 't>\n<appian-action processModelUuid="0002dc63-6dd3-8000-f92f-7f0000014e7a"  />\n</body></html>';
+         
+         frameDoc.open();
+         frameDoc.write(html);
+         frameDoc.close();
+         }
+      </script>
+   </head>
+   <body>
+      <div id="content" style="max-width: 1200px;" />
+      <script>
+         render();
+      </script>
+   </body>
+</html>
 
 
 <script type="text/javascript">
