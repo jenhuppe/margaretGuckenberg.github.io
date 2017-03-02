@@ -1,0 +1,39 @@
+﻿$(document).ready(function() {
+
+	// detect edit mode
+	var InEditMode = (document.getElementById('MSOLayout_InDesignMode').value == 1) ? true : false;
+
+	// add rss link to news items
+	$('.cqfeed').each(function() {
+		$(this).find('a').each(function() {
+			link = $(this).attr('href').replace('xsl=1','xsl=2');
+			$(this).attr('href',link);
+		});		
+	});	
+
+	if(!InEditMode){
+
+		//create accordions
+		createAccordions();
+
+		/*
+			Following commented out sections
+			was used to track what accordion pane
+			was open on a per-page basis, and
+			then re-open it when coming back
+			to the page. Commented out 9/4/13
+		*/
+		// track accordion settings per page
+		//getActiveAccordion();
+		// on page load, set active accordion if found in cookie
+		//setActiveAccordion();
+	}
+		
+});
+
+// create accordions
+function createAccordions(){$('.wpz.accordion').each(function(){try{var headers = new Array();var content = new Array();$(this).find('.ms-standardheader').each(function(){headers.push($(this).text());content.push($(this).parents('tr').eq(1).next().find('div').html());});$(this).html('');for(var i=0;i<headers.length;i++){$(this).append('<h3>'+headers[i]+'<span class="arrow"></span></h3>');$(this).append('<div>'+content[i]+'</div>');}}catch(e){}});$('.accordion').accordion({heightStyle:"content",collapsible:true,active:false,beforeActivate: function(event, ui) {if (ui.newHeader[0]) {var currHeader  = ui.newHeader;var currContent = currHeader.next('.ui-accordion-content');} else {var currHeader  = ui.oldHeader;var currContent = currHeader.next('.ui-accordion-content');}var isPanelSelected = currHeader.attr('aria-selected') == 'true';currHeader.toggleClass('ui-corner-all',isPanelSelected).toggleClass('ui-accordion-header-active accordion-header-active ui-state-active ui-corner-top',!isPanelSelected).attr('aria-selected',((!isPanelSelected).toString()));currHeader.children('.ui-icon').toggleClass('ui-icon-triangle-1-e',isPanelSelected).toggleClass('ui-icon-triangle-1-s',!isPanelSelected);currContent.toggleClass('accordion-content-active',!isPanelSelected);if (isPanelSelected) { currContent.slideUp('fast'); }  else { currContent.slideDown('fast'); ;}return false;}});}
+// track accordion settings per page
+function getActiveAccordion(){$('.accordion').on('accordionactivate', function(event,ui) {index_accordion_active = $('.accordion').index($(this));index_accordion_active_header = $(this).accordion('option','active');document.cookie = 'accordion_'+document.location.pathname+'='+index_accordion_active+','+index_accordion_active_header;});}
+// on page load, set active accordion if found in cookie
+function setActiveAccordion(){var cookie = document.cookie;var cookie_name = 'accordion_'+document.location.pathname+'=';var cookie_name_length = cookie_name.length;if (cookie.indexOf('accordion_'+document.location.pathname+'=')!=-1) {var cookie_start = cookie.indexOf('accordion_'+document.location.pathname+'=')+cookie_name_length;var cookie_end = 3;var indexes = cookie.substr(cookie_start,cookie_end);var index_accordion_active = parseInt(indexes.substr(0,1));var index_accordion_active_header = parseInt(indexes.substr(2,1));$('.accordion').eq(index_accordion_active).accordion('option','active',index_accordion_active_header);}}
