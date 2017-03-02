@@ -692,7 +692,7 @@ var w = window.open(url, 'printFriendlyWindow', '');
          frameDoc = scriptFrame.contentWindow.document;
          }
          
-         var html = '<html>\n<head></head>\n<body style="height: 725px;">\n<script src="https://pwc-nmls.appiancloud.com/suite/tempo/tempo.nocache.js"' + '></scrip' + 't>\n<appian-action processModelUuid="0002dc63-6dd3-8000-f92f-7f0000014e7a"  />\n</body></html>';
+         var html = '<html>\n<head></head>\n<body style="height: 725px;">\n<script src="https://pwc-nmls.appiancloud.com/suite/tempo/tempo.nocache.js"' + '></scrip' + 't>\n<appian-action processModelUuid="0002dc63-6dd3-8000-f92f-7f0000014e7a" themeIdentifier = "nmls-theme" />\n</body></html>';
          
          frameDoc.open();
          frameDoc.write(html);
