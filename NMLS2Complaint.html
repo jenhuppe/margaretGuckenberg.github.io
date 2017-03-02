@@ -553,6 +553,7 @@ var w = window.open(url, 'printFriendlyWindow', '');
          scriptFrame.src = 'javascript:""';
          scriptFrame.style.width = "100%";
          scriptFrame.style.height = "750px";
+		 scriptFrame.frameborder = "0";
          content.appendChild(scriptFrame);
          
          frameDoc = scriptFrame.contentDocument;
@@ -569,7 +570,7 @@ var w = window.open(url, 'printFriendlyWindow', '');
       </script>
    </head>
    <body>
-      <div id="content" style="max-width: 500px;" />
+      <div id="content" style="max-width: 1200px;" />
       <script>
          render();
       </script>
