@@ -506,39 +506,7 @@ var w = window.open(url, 'printFriendlyWindow', '');
 				
 				
 				</div>
-			<pre>
-<!DOCTYPE html>
-<html>
-   <head>
-      <script>
-         function render() {
-         var scriptFrame = document.createElement('iframe');
-         scriptFrame.id = "embedded-iframe";
-         scriptFrame.src = 'javascript:""';
-         scriptFrame.style.width = "100%";
-         scriptFrame.style.height = "750px";
-         content.appendChild(scriptFrame);
-         
-         frameDoc = scriptFrame.contentDocument;
-         if (!frameDoc) {
-         frameDoc = scriptFrame.contentWindow.document;
-         }
-         
-         var html = '<html>\n<head></head>\n<body style="height: 725px;">\n<script src="https://pwc-nmls.appiancloud.com/suite/tempo/tempo.nocache.js"' + '></scrip' + 't>\n<appian-action processModelUuid="0002dc63-6dd3-8000-f92f-7f0000014e7a"  />\n</body></html>';
-         
-         frameDoc.open();
-         frameDoc.write(html);
-         frameDoc.close();
-         }
-      </script>
-   </head>
-   <body>
-      <div id="content" style="max-width: 2000px;" />
-      <script>
-         render();
-      </script>
-   </body>
-</html>
+			
 				<div class="webZone" id="topZone">
 					<table width="100%" cellpadding="0" cellspacing="0" border="0">
 	<tbody><tr>
@@ -600,7 +568,39 @@ var w = window.open(url, 'printFriendlyWindow', '');
 			</tr>
 		</tbody></table></td>
 	</tr>
-
+<pre>
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+         function render() {
+         var scriptFrame = document.createElement('iframe');
+         scriptFrame.id = "embedded-iframe";
+         scriptFrame.src = 'javascript:""';
+         scriptFrame.style.width = "100%";
+         scriptFrame.style.height = "750px";
+         content.appendChild(scriptFrame);
+         
+         frameDoc = scriptFrame.contentDocument;
+         if (!frameDoc) {
+         frameDoc = scriptFrame.contentWindow.document;
+         }
+         
+         var html = '<html>\n<head></head>\n<body style="height: 725px;">\n<script src="https://pwc-nmls.appiancloud.com/suite/tempo/tempo.nocache.js"' + '></scrip' + 't>\n<appian-action processModelUuid="0002dc63-6dd3-8000-f92f-7f0000014e7a"  />\n</body></html>';
+         
+         frameDoc.open();
+         frameDoc.write(html);
+         frameDoc.close();
+         }
+      </script>
+   </head>
+   <body>
+      <div id="content" style="max-width: 500px;" />
+      <script>
+         render();
+      </script>
+   </body>
+</html>
 	</tbody>
 </table>
 
